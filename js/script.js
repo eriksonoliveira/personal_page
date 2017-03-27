@@ -1,4 +1,22 @@
-//animate to the target section
+//products menu
+var classActive = 'active';
+
+/*makes sure that the first item is active on page load*/
+$(".prod-menu-item").first().addClass(classActive);
+$(".prod-item").first().addClass(classActive);
+
+$(".prod-menu-item").click(function(e) {
+  e.preventDefault();
+  var itemId = $(this).attr("data-target");
+
+  /*remove class active from the previously
+  clicked item and adds to the current item*/
+  $(".prod-menu-item, .prod-item").removeClass(classActive);
+  $(this).addClass(classActive);
+  $(itemId).addClass(classActive);
+});
+
+//animate to the target section on click
 $("nav a").click(function(e) {
   e.preventDefault();
 
