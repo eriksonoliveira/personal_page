@@ -25,6 +25,7 @@ html, body {
 .menu-logo {
   width: 20%;
   display: inline-block;
+  float: left;
   background-color: rgb(40,82,122);
 }
 
@@ -49,10 +50,6 @@ html, body {
 .menu-nav {
   width: 80%;
   float: right;
-}
-
-.menu-nav ul {
-  text-align: center;
 }
 
 .menu-nav ul li {
@@ -278,6 +275,13 @@ html, body {
   color: #FFF;
 }
 
-
+.menu-mobile-btn {
+  width: 36px;
+  height: 36px;
+  display: block;
+  background: #FFF;
+  margin: 20px 20px 0 0;
+  position: absolute;
+}
 
 
