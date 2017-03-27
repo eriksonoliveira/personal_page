@@ -4,9 +4,12 @@ html, body {
   overflow-x: hidden;
 }
 
-#nav {
-  width: 100%;
+.menu-height {
   height: 70px;
+}
+
+.menu {
+  width: 100%;
   text-align: center;
   line-height: 70px;
   background-color: #1E90FF;
@@ -15,12 +18,49 @@ html, body {
   z-index: 100;
 }
 
-#menu li {
+.menu.add-shadow {
+  box-shadow: 0px 3px 10px 0px rgba(2,2,2,0.4);
+}
+
+.menu-logo {
+  width: 20%;
+  display: inline-block;
+  background-color: rgb(40,82,122);
+}
+
+.menu-logo:hover {
+  background-color: rgba(40,82,122, .7);
+}
+
+.logo {
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
+  color: #FFF;
+/*  padding: 19px 20px 20px;*/
+}
+
+.logo:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: #EEE;
+}
+
+.menu-nav {
+  width: 80%;
+  float: right;
+}
+
+.menu-nav ul {
+  text-align: center;
+}
+
+.menu-nav ul li {
   display: inline-block;
   padding: 0 15px;
 }
 
-#menu li a {
+.menu-nav ul li a {
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
@@ -30,7 +70,7 @@ html, body {
   transition: border-bottom .15s linear 0s;
 }
 
-#menu li:hover a {
+.menu-nav ul li:hover a {
   border-bottom: 1px solid #FFF;
 }
 
@@ -124,16 +164,18 @@ html, body {
 .prod-item {
   opacity: 0;
   visibility: hidden;
-  height: 0;
-  transform: translate3d(-50px, 0, 0);
+  position: absolute;
+/*  height: 0;*/
+/*  transform: translate3d(-50px, 0, 0);*/
 }
 
 .prod-item.active {
   opacity: 1;
   visibility: visible;
-  transition: .4s;
-  height: auto;
-  transform: translate3d(0, 0, 0);
+  transition: 1s;
+  position: relative;
+/*  height: auto;*/
+/*  transform: translate3d(0, 0, 0);*/
 }
 
 #services {

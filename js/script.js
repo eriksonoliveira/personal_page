@@ -22,7 +22,7 @@ $("nav a").click(function(e) {
 
   var id = $(this).attr("href"),
       targetOffset = $(id).offset().top,
-      menuHeight = $("nav").innerHeight();
+      menuHeight = $(".menu").innerHeight();
 
   $("html, body").animate({
     scrollTop: targetOffset - menuHeight
@@ -33,7 +33,8 @@ $("nav a").click(function(e) {
 (function() {
   var $target = $('.wrapper'),
       animationClass = 'anime-start',
-      offset = $(window).height() * 3/4;
+      offset = $(window).height() * 3/4,
+      menu = $('.menu');
 
   function animeScroll() {
     var documentTop = $(document).scrollTop();
@@ -44,6 +45,15 @@ $("nav a").click(function(e) {
         $(this).addClass(animationClass);
       }
     })
+
+    if(documentTop > 0 ) {
+      menu.addClass('add-shadow');
+    } else {
+      if (menu.hasClass('add-shadow')) {
+        menu.removeClass('add-shadow');
+      }
+    }
+
   }
 
   animeScroll();
