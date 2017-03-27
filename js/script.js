@@ -1,7 +1,7 @@
 //products menu
-/*maskes sure that the first item is active on page load*/
 var classActive = 'active';
 
+/*makes sure that the first item is active on page load*/
 $(".prod-menu-item").first().addClass(classActive);
 $(".prod-item").first().addClass(classActive);
 
@@ -16,7 +16,7 @@ $(".prod-menu-item").click(function(e) {
   $(itemId).addClass(classActive);
 });
 
-//animate to the target section
+//animate to the target section on click
 $("nav a").click(function(e) {
   e.preventDefault();
 
