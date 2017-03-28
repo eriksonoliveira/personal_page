@@ -29,6 +29,13 @@ $("nav a").click(function(e) {
   }, 500);
 });
 
+
+$(".mobile-btn").click(function() {
+  $(this).toggleClass('active');
+  $(".mobile-menu").toggleClass('active');
+});
+
+
 //animate sections on scroll
 (function() {
   var $target = $('.wrapper'),
