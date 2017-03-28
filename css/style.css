@@ -275,13 +275,41 @@ html, body {
   color: #FFF;
 }
 
-.menu-mobile-btn {
+.mobile-btn {
   width: 36px;
   height: 36px;
+  color: #FFF;
   display: block;
-  background: #FFF;
+  border-top: 4px solid;
   margin: 20px 20px 0 0;
-  position: absolute;
+  position:;
+  float: left;
+  cursor: pointer;
+  -webkit-backface-visibility: hidden;
 }
 
+.mobile-btn:after, .mobile-btn:before {
+  content: '';
+  height: 4px;
+  margin-top: 6px;
+  display: block;
+  background: currentColor;
+  position: relative;
+  transition: transform .2s ease;
+}
 
+.mobile-btn.active {
+  border-top-color: transparent;
+}
+
+.mobile-btn.active:after {
+  margin-top: 0px;
+  top: 2px;
+  transform: rotate(45deg);
+}
+
+.mobile-btn.active:before {
+  margin-top: 0px;
+  top: 6px;
+  transform: rotate(135deg);
+}
