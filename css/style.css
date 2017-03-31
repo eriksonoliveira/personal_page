@@ -87,14 +87,7 @@ html, body {
 
 #header {
   width: 100%;
-/*  height: 400px;*/
   text-align: center;
-/*  background-color: #E8E8E8;*/
-}
-
-.header-img {
-  width: 100%;
-  height: 400px;
 }
 
 #img-1 {
@@ -114,6 +107,7 @@ html, body {
   left: 0;
   right: 0;
   margin-top: 40px;
+  z-index: 1;
 }
 
 #header-title {
@@ -181,17 +175,13 @@ html, body {
   opacity: 0;
   visibility: hidden;
   position: absolute;
-/*  height: 0;*/
-/*  transform: translate3d(-50px, 0, 0);*/
 }
 
 .prod-item.active {
   opacity: 1;
   visibility: visible;
-  transition: 1s;
+  transition: 1.5s;
   position: relative;
-/*  height: auto;*/
-/*  transform: translate3d(0, 0, 0);*/
 }
 
 #services {
@@ -381,7 +371,21 @@ html, body {
 }
 
 .slide {
+  position: relative;
+  overflow: hidden;
+}
 
+.slide > * {
+  width: 100%;
+  height: 400px;
+  position: absolute;
+  opacity: 0;
+  transition: 1.5s;
+}
+
+.slide > .header-img.active {
+  position: relative;
+  opacity: 1;
 }
 
 
