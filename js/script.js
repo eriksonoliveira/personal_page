@@ -51,7 +51,7 @@ function rotateSlide() {
   nextSlide.addClass('active');
 }
 
-setInterval(rotateSlide, 5000);
+/*setInterval(rotateSlide, 5000);*/
 
 //animate sections on scroll
 (function() {
