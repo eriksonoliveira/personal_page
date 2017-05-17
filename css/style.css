@@ -128,7 +128,7 @@ html, body {
   font-size: 20px;
 }
 
-.widget-header h3{
+.widget-header {
   margin: 0;
   text-align: center;
   font-size: 31px;
@@ -142,9 +142,13 @@ html, body {
   width: 455px;
 }
 
+.prod-desc {
+  width: 455px;
+}
+
 .widget-desc {
   margin: 20px auto 0 auto;
-  width: 455px;
+/*  width: 455px;*/
   text-align: center;
 }
 
@@ -294,6 +298,10 @@ html, body {
   color: #FFF;
 }
 
+.about-desc {
+  width: 455px;
+}
+
 @media only screen and (min-width: 769px) {
 
 .menu-nav ul li:hover a {
@@ -410,6 +418,7 @@ html, body {
 .menu-nav.mobile-menu li a {
   padding: 0;
   font-weight: normal;
+  font-size: 12px;
 }
 
 #header {
@@ -419,5 +428,23 @@ html, body {
 .slide > * {
   height: 400px;
 }
+
+.widget-header {
+  font-size: 22px;
+}
+
+.prod-img img {
+  width: 400px;
+  height: 220px;
+}
+
+.prod-desc {
+  width: 400px;
+}
+
+#wrapper-cont-form {
+  width: 400px;
+}
+
 
 }
