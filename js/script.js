@@ -36,19 +36,33 @@ $(".mobile-btn").click(function() {
   $("html, body").toggleClass('active');
 });
 
+
 //Slide
+//Adds the class 'active' to the first slide on start
 $(".slide >:first").addClass('active');
 
-function rotateSlide() {
+
+function rotateSlide(control) {
   var activeSlide = $(".slide > .active"),
-      nextSlide = activeSlide.next();
+      nextSlide = activeSlide.next(),
+      prevSlide = activeSlide.prev();
+
+  //console.log($(".slide >:nth-child(2)"));
 
   if(nextSlide.length == 0) {
     nextSlide = $(".slide >:first");
   }
+  if(prevSlide.length == 0) {
+    prevSlide = $(".slide >:last");
+  }
 
   activeSlide.removeClass('active');
-  nextSlide.addClass('active');
+  if(control == 1){
+    nextSlide.addClass('active');
+  }
+  if(control == 0){
+    prevSlide.addClass('active');
+  }
 }
 
 /*setInterval(rotateSlide, 5000);*/
@@ -71,10 +85,10 @@ function rotateSlide() {
     })
 
     if(documentTop > 0 ) {
-      menu.addClass('add-shadow');
+      menu.addClass('fix-menu');
     } else {
-      if (menu.hasClass('add-shadow')) {
-        menu.removeClass('add-shadow');
+      if (menu.hasClass('fix-menu')) {
+        menu.removeClass('fix-menu');
       }
     }
 

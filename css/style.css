@@ -4,6 +4,11 @@ html, body {
   overflow-x: hidden;
 }
 
+body {
+  /*font-family: 'Raleway', sans-serif;*/
+  font-family: 'Open Sans', sans-serif;
+}
+
 .menu-height {
   height: 70px;
 }
@@ -12,13 +17,16 @@ html, body {
   width: 100%;
   text-align: center;
   line-height: 70px;
-  background-color: #1E90FF;
-  position: fixed;
+/*  background-color: #1E90FF;*/
+  background-color: transparent;
+  position: absolute;
   top: 0;
   z-index: 100;
 }
 
-.menu.add-shadow {
+.menu.fix-menu {
+  position: fixed;
+  background-color: #1E90FF;
   box-shadow: 0px 3px 10px 0px rgba(2,2,2,0.4);
 }
 
@@ -68,7 +76,7 @@ html, body {
 }
 
 #body {
-  margin-top: 70px;
+  /*margin-top: 70px;*/
 }
 
 .wrapper {
@@ -88,13 +96,36 @@ html, body {
 #header {
   width: 100%;
   height: 800px;
+  position: relative;
   text-align: center;
 }
 
+
+.slide {
+  position: relative;
+  overflow: hidden;
+}
+
+/*The '*' selects any child type, wether it is a div, li or any other*/
+.slide > * {
+  width: 100%;
+  height: 800px;
+  position: absolute;
+  opacity: 0;
+  transition: 1.5s;
+}
+
+/*styles the slide with the class 'active' that is a direct child of '.slide'*/
+.slide > .header-img.active {
+  position: relative;
+  opacity: 1;
+}
+
 #img-1 {
-  background-image: url("../img/20161103_110202(2).jpg");
+  background-image: url("../img/img-1.jpg");
   background-size: cover;
 }
+
 
 #img-1:after {
   position: absolute;
@@ -104,11 +135,57 @@ html, body {
 }
 
 #img-2 {
-  background-color: #009079;
+  background-image: url("../img/img-2.jpg");
+  background-size: cover;
+}
+
+#img-2:after {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  content: ' ';
+  background-color: rgba(80,70,60,.5);
 }
 
 #img-3 {
-  background-color: #D5B9B9;
+  background-image: url("../img/img-3.jpg");
+  background-size: cover;
+}
+
+#img-3:after {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  content: ' ';
+  background-color: rgba(40,80,40,.4);
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px 30px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  text-decoration: none;
 }
 
 #header-title-wrapper {
@@ -116,16 +193,18 @@ html, body {
   position: absolute;
   left: 0;
   right: 0;
-  margin-top: 40px;
+  top: 365px;
   z-index: 1;
 }
 
 #header-title {
   font-size: 36px;
+  font-weight: 700;
 }
 
 #header-subtitle {
   font-size: 20px;
+  font-weight: 300;
 }
 
 .widget-header {
@@ -150,6 +229,8 @@ html, body {
   margin: 20px auto 0 auto;
 /*  width: 455px;*/
   text-align: center;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 #prod-menu {
@@ -232,7 +313,7 @@ html, body {
 
 #wrapper-cont-form {
   width: 500px;
-  border: 2px solid #1E90FF;
+  border: 1px solid #1E90FF;
   margin: 20px auto 0 auto;
   padding: 0 20px;
   background-color: #FFF;
@@ -296,10 +377,160 @@ html, body {
 #about {
   background-color: #1E90FF;
   color: #FFF;
+/*  padding: 0 20px;*/
 }
 
 .about-desc {
-  width: 455px;
+  max-width: 495px;
+  padding: 0 20px;
+}
+
+.social-links {
+  width: 100%;
+  margin: 30px auto 0 auto;
+  text-align: center;
+}
+
+.social-links ul {
+  margin: auto;
+  list-style: none;
+  padding: 0;
+}
+
+.social-links li {
+  display: inline-block;
+  text-align: center;
+  padding: 0 5px;
+}
+
+.social-links ul:hover > li {
+  cursor: pointer;
+}
+
+.social-links li a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 20px;
+  color: #FFF;
+  transition: .1s;
+
+}
+
+.circle-icon {
+  border: 1px solid #FFF;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  line-height: 30px;
+  vertical-align: middle;
+  padding: 3px 5px;
+  border-radius: 50%;
+}
+
+
+/*#links-1 li::after {
+  content: '';
+  height: 20px;
+  width: 20px;
+  margin-top: 0px;
+  display: block;
+  position: relative;
+  transition: transform .2s ease;
+  visibility: hidden;
+}*/
+
+.fa-facebook::after {
+  content: "\f09a";
+  display: block;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: -10px;
+  visibility: hidden;
+  color: inherit;
+  background: #3b5998;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  padding-top: 8px;
+}
+
+.fa-instagram::after {
+  content: "\f16d";
+  display: block;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: -10px;
+  visibility: hidden;
+  color: #FFF;
+  background: #cd486b;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  padding-top: 8px;
+}
+
+.fa-linkedin::after {
+  content: "\f0e1";
+  display: block;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: -10px;
+  visibility: hidden;
+  color: #FFF;
+  background: #0077B5;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  padding-top: 8px;
+}
+
+.fa-pinterest-p::after {
+  content: "\f231";
+  display: block;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: -10px;
+  visibility: hidden;
+  color: #FFF;
+  background: #BD081C;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  padding-top: 8px;
+}
+
+/*.facebook::after {
+  background-image: url(../img/icons/005-facebook.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #FFF;
+  background-size: cover;
+}*/
+
+#links-1 li:hover a {
+  transform: translate3d(0px, -40px, 0px);
+  visibility: hidden;
+}
+
+/*#links-1 li:hover::after {
+  transform: translate3d(0px, -25px, 0px);
+  visibility: visible;
+}*/
+
+.facebook:hover .fa-facebook::after {
+  visibility: visible;
+}
+
+.instagram:hover .fa-instagram::after {
+  visibility: visible;
+}
+
+.linkedin:hover .fa-linkedin::after {
+  visibility: visible;
+}
+
+.pinterest:hover .fa-pinterest-p::after {
+  visibility: visible;
 }
 
 @media only screen and (min-width: 769px) {
@@ -308,25 +539,6 @@ html, body {
   border-bottom: 1px solid #FFF;
 }
 
-}
-
-
-.slide {
-  position: relative;
-  overflow: hidden;
-}
-
-.slide > * {
-  width: 100%;
-  height: 800px;
-  position: absolute;
-  opacity: 0;
-  transition: 1.5s;
-}
-
-.slide > .header-img.active {
-  position: relative;
-  opacity: 1;
 }
 
 
@@ -425,10 +637,26 @@ html, body {
   height: 400px;
 }
 
+#header-title-wrapper {
+  top: 165px;
+  padding: 0 45px;
+}
+
+#header-title {
+  font-size: 30px;
+}
+
+#header-subtitle {
+  font-size: 16px;
+}
+
 .slide > * {
   height: 400px;
 }
 
+.prev, .next {
+  padding: 16px;
+}
 .widget-header {
   font-size: 22px;
 }
