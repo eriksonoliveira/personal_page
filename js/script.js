@@ -30,12 +30,22 @@ $("nav a").click(function(e) {
 });
 
 //Mobile menu button
+/*When the button is clicked the class active is
+toggled for the menu and the html and body elements */
 $(".mobile-btn").click(function() {
   $(this).toggleClass('active');
-  $(".mobile-menu").toggleClass('active');
-  $("html, body").toggleClass('active');
+  $(".mobile-menu, html, body").toggleClass('active');
 });
 
+/*Hides de menu if the user clicks aniwhere in
+the document that is not inside the menu*/
+$(document).click(function(event) {
+    if($(event.target).closest(".mobile-menu, .mobile-btn").length == 0) {
+        if($(".mobile-menu").hasClass('active')) {
+            $(".mobile-menu, .mobile-btn, html, body").toggleClass('active');
+        }
+    }
+})
 
 //Slide
 //Adds the class 'active' to the first slide on start
@@ -47,7 +57,6 @@ function rotateSlide(control) {
       nextSlide = activeSlide.next(),
       prevSlide = activeSlide.prev();
 
-  //console.log($(".slide >:nth-child(2)"));
 
   if(nextSlide.length == 0) {
     nextSlide = $(".slide >:first");
@@ -69,7 +78,7 @@ function rotateSlide(control) {
 
 //animate sections on scroll
 (function() {
-  var $target = $('.wrapper'),
+  var $target = $('.animate'),
       animationClass = 'anime-start',
       offset = $(window).height() * 3/4,
       menu = $('.menu');

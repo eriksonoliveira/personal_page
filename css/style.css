@@ -32,13 +32,10 @@ body {
 
 .menu-logo {
   width: 190px;
+  margin-left: 20px;
   display: inline-block;
   float: left;
-  background-color: rgb(40,82,122);
-}
-
-.menu-logo:hover {
-  background-color: rgba(40,82,122, .7);
+  /*background-color: rgba(40,82,122, 0.5);*/
 }
 
 .logo {
@@ -79,13 +76,21 @@ body {
   /*margin-top: 70px;*/
 }
 
-.wrapper {
+.animate {
   opacity: 0;
   transition: 1.5s;
 }
 
+#wrapper-cont-form.animate {
+  transform: translate3d(0, -50px, 0);
+}
+
 .anime-start {
   opacity: 1;
+}
+
+#wrapper-cont-form.anime-start {
+  transform: translate3d(0, 0, 0);
 }
 
 .widget {
@@ -100,7 +105,6 @@ body {
   text-align: center;
 }
 
-
 .slide {
   position: relative;
   overflow: hidden;
@@ -112,7 +116,7 @@ body {
   height: 800px;
   position: absolute;
   opacity: 0;
-  transition: 1.5s;
+  transition: opacity 1.5s;
 }
 
 /*styles the slide with the class 'active' that is a direct child of '.slide'*/
@@ -124,6 +128,7 @@ body {
 #img-1 {
   background-image: url("../img/img-1.jpg");
   background-size: cover;
+  background-position: center;
 }
 
 
@@ -137,6 +142,7 @@ body {
 #img-2 {
   background-image: url("../img/img-2.jpg");
   background-size: cover;
+  background-position: center;
 }
 
 #img-2:after {
@@ -149,6 +155,7 @@ body {
 #img-3 {
   background-image: url("../img/img-3.jpg");
   background-size: cover;
+  background-position: center;
 }
 
 #img-3:after {
@@ -219,6 +226,7 @@ body {
   border: 1px solid #AAA;
   height: 250px;
   width: 455px;
+  background-color: rgba(150, 150, 150, .2);
 }
 
 .prod-desc {
@@ -235,7 +243,7 @@ body {
 
 #prod-menu {
   height: 50px;
-  margin: 20px auto;
+  margin: 40px auto 20px auto;
   text-align: center;
   line-height: 50px;
 }
@@ -252,7 +260,7 @@ body {
 .prod-menu-item {
   display: inline;
   padding: 15px 25px;
-  border: 2px solid #1E90FF;
+  border: 1px solid #1E90FF;
   transition: .2s ease;
 }
 
@@ -280,15 +288,35 @@ body {
 }
 
 #services {
-  background-color: #0053D1;
   color: #FFF;
   border-top: 1px solid #111;
   border-bottom: 1px solid #111;
+  background-image: url("../img/img-4.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#services::before {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  content: ' ';
+  background-color: rgba(80,70,60,.5);
+}
+
+#services-inner {
+  max-width: 1350px;
+  margin: 60px auto;
+  display: block;
+  position: relative;
+
 }
 
 .serv-row {
   max-width: 90%;
-  margin: auto;
+  margin: 40px auto 0 auto;
 }
 
 .serv-elem {
@@ -306,6 +334,7 @@ body {
   border: 1px solid #AAA;
   height: 250px;
   width: 333px;
+  background-color: rgba(150, 150, 150, .2);
 }
 
 #serv-desc {
@@ -317,7 +346,7 @@ body {
 }
 
 #wrapper-cont-form {
-  width: 450px;
+  max-width: 450px;
   border: 1px solid #1E90FF;
   margin: 20px auto 0 auto;
   padding: 50px 0;
@@ -398,9 +427,12 @@ body {
 }
 
 .social-links ul {
+  height: 50px;
+  line-height: 50px;
   margin: auto;
   list-style: none;
   padding: 0;
+  overflow: hidden;
 }
 
 .social-links li {
@@ -418,7 +450,7 @@ body {
   text-decoration: none;
   font-size: 20px;
   color: #FFF;
-  transition: .1s;
+  transition: .2s;
 
 }
 
@@ -427,9 +459,9 @@ body {
   width: 35px;
   height: 35px;
   text-align: center;
-  line-height: 30px;
+  line-height: 34px;
   vertical-align: middle;
-  padding: 3px 5px;
+  padding: 0 5px;
   border-radius: 50%;
 }
 
@@ -598,23 +630,23 @@ body {
   width: 250px;
   position: fixed;
   background: #1E90FF;
-  padding: 5px 0 0 0;
+  padding: 0px 0 0 0;
   right: 0px;
   top: 65px;
   opacity: 0;
   visibility: hidden;
   transform: translate3d(70px, 0px, 0px);
+  transition: all .2s ease-in-out;
 }
 
 .menu-nav.mobile-menu.active {
-  transition: all .2s ease-in-out;
   opacity: 1;
   visibility: visible;
   transform: translate3d(0px, 0px, 0px);
 }
 
 .menu-nav.mobile-menu ul {
-  padding: 0 10px;
+  padding: 0 0px;
 }
 
 .menu-nav.mobile-menu li {
@@ -622,11 +654,13 @@ body {
   line-height: 50px;
   display: block;
   padding: 0;
+  border-bottom: 1px solid #70C0F4;
 /*  border-top: 1px solid; */
 }
  
 .menu-nav.mobile-menu li:hover{
   cursor: pointer;
+  background-color: #A4D2FE;
 }
   
 .menu-nav.mobile-menu li:hover a {
@@ -686,7 +720,6 @@ body {
 
   .prod-menu-item {
     padding: 10px 20px;
-    border: 1px solid #1E90FF;
   }
 
   .prod-img img {

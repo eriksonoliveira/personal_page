@@ -13,7 +13,7 @@
 
     <header class="menu menu-height">
       <span class="menu-logo menu-height">
-        <a class="logo" href="/">Logo</a>
+        <a class="logo" href="/">LOGO</a>
       </span>
       <span class="mobile-btn"></span>
       <nav class="menu-nav menu-height mobile-menu">
@@ -28,7 +28,7 @@
     </header>
 
     <div id="body">
-      <section id="header" class="wrapper">
+      <section id="header">
         <div id="header-title-wrapper">
           <div id="header-title">PLAN YOUR NEXT TRIP</div>
           <div id="header-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
@@ -46,7 +46,7 @@
           <a class="next" onclick="rotateSlide(1)">&#10095;</a>
 
       </section>
-      <section id="products" class="widget wrapper">
+      <section id="products" class="widget">
         <div id="prod-header" class="widget-header">See some of our products</div>
         <div id="prod-menu">
           <div>
@@ -74,46 +74,42 @@
           <div class="prod-desc widget-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla, ante ut pretium hendrerit, libero libero scelerisque lacus, ut luctus erat odio et ipsum. Donec nec urna lobortis, suscipit ligula nec, eleifend sapien. Sed tincidunt purus a turpis dapibus pulvinar. Nulla ac porttitor odio. </div>
         </div>
       </section>
-      <section id="services" class="widget wrapper container-fluid">
-        <div id="serv-header" class="widget-header">See some of our services</div>
-        <div class="row serv-row">
-          <div class="serv-elem col-lg-4">
-            <div class="serv-img">
-              <img src=""/>
+      <section id="services" class="animate">
+        <div id="services-inner">
+          <div id="serv-header" class="widget-header">See some of our services</div>
+          <div class="row serv-row">
+            <div class="serv-elem col-lg-4">
+              <div class="serv-img">
+                <img src=""/>
+              </div>
+              <div id="serv-desc" class="widget-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla, ante ut pretium hendrerit, libero libero scelerisque lacus, ut luctus erat odio et ipsum. Donec nec urna lobortis, suscipit ligula nec, eleifend sapien. Sed tincidunt purus a turpis dapibus pulvinar. Nulla ac porttitor odio. </div>
             </div>
-            <div id="serv-desc" class="widget-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla, ante ut pretium hendrerit, libero libero scelerisque lacus, ut luctus erat odio et ipsum. Donec nec urna lobortis, suscipit ligula nec, eleifend sapien. Sed tincidunt purus a turpis dapibus pulvinar. Nulla ac porttitor odio. </div>
-          </div>
-          <div class="serv-elem col-lg-4">
-            <div class="serv-img">
-              <img src=""/>
+            <div class="serv-elem col-lg-4">
+              <div class="serv-img">
+                <img src=""/>
+              </div>
+              <div id="serv-desc" class="widget-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla, ante ut pretium hendrerit, libero libero scelerisque lacus, ut luctus erat odio et ipsum. Donec nec urna lobortis, suscipit ligula nec, eleifend sapien. Sed tincidunt purus a turpis dapibus pulvinar. Nulla ac porttitor odio. </div>
             </div>
-            <div id="serv-desc" class="widget-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla, ante ut pretium hendrerit, libero libero scelerisque lacus, ut luctus erat odio et ipsum. Donec nec urna lobortis, suscipit ligula nec, eleifend sapien. Sed tincidunt purus a turpis dapibus pulvinar. Nulla ac porttitor odio. </div>
-          </div>
-          <div class="serv-elem col-lg-4">
-            <div class="serv-img">
-              <img src=""/>
+            <div class="serv-elem col-lg-4">
+              <div class="serv-img">
+                <img src=""/>
+              </div>
+              <div id="serv-desc" class="widget-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla, ante ut pretium hendrerit, libero libero scelerisque lacus, ut luctus erat odio et ipsum. Donec nec urna lobortis, suscipit ligula nec, eleifend sapien. Sed tincidunt purus a turpis dapibus pulvinar. Nulla ac porttitor odio. </div>
             </div>
-            <div id="serv-desc" class="widget-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla, ante ut pretium hendrerit, libero libero scelerisque lacus, ut luctus erat odio et ipsum. Donec nec urna lobortis, suscipit ligula nec, eleifend sapien. Sed tincidunt purus a turpis dapibus pulvinar. Nulla ac porttitor odio. </div>
           </div>
         </div>
       </section>
-      <section id="contact" class="widget wrapper">
+      <section id="contact" class="widget ">
         <div id="cont-header" class="widget-header">Contact Us</div>
-        <div id="wrapper-cont-form">
+        <div id="wrapper-cont-form" class="animate container">
           <form id="cont-form" method="POST">
-            <div class="form-elem">
+            <div class="form-group" >
               <label for="name">Name</label>
-              <input id="name" type="text" class="form-field">
-            </div>
-            <div class="form-elem">
+              <input id="name" name="name" type="text" class="form-field form-control">
               <label for="email">E-mail</label>
               <input id="email" type="email" class="form-field">
-            </div>
-            <div class="form-elem">
               <label for="message">Message</label>
               <textarea id="message" maxlength="500" class="form-field"></textarea>
-            </div>
-            <div>
               <input id="send-btn" type="submit" value="SEND">
             </div>
           </form>
