@@ -1,7 +1,8 @@
 html, body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+    width: 100%;
+    height: 100% !important;
 }
 
 body {
@@ -95,12 +96,14 @@ body {
 
 .widget {
   width: 100%;
+/*  height: 100vh;*/
   padding: 60px 0;
 }
 
 #header {
   width: 100%;
-  height: 800px;
+
+/*  height: 800px;*/
   position: relative;
   text-align: center;
 }
@@ -113,7 +116,7 @@ body {
 /*The '*' selects any child type, wether it is a div, li or any other*/
 .slide > * {
   width: 100%;
-  height: 800px;
+  height: 100vh;
   position: absolute;
   opacity: 0;
   transition: opacity 1.5s;
@@ -288,6 +291,7 @@ body {
 }
 
 #services {
+    min-height: 100vh;
   color: #FFF;
   border-top: 1px solid #111;
   border-bottom: 1px solid #111;
@@ -297,6 +301,9 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
 }
 
 #services::before {
@@ -311,7 +318,6 @@ body {
   margin: 60px auto;
   display: block;
   position: relative;
-
 }
 
 .serv-row {
