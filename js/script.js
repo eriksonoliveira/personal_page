@@ -26,7 +26,10 @@ $("nav a").click(function(e) {
 
   $("html, body").animate({
     scrollTop: targetOffset - menuHeight
-  }, 500);
+  },
+    1000,
+    "easeInOutExpo"
+  );
 });
 
 //Mobile menu button
