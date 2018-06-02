@@ -3,35 +3,42 @@
   <head>
     <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+    <!--  Bootstrap V3.3.7  -->
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>-->
+    <!--  Bootstrap V3.3.7  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,500,700" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Erikson Oliveira - Web developer</title>
   </head>
   <body>
 
     <header class="menu menu-height">
       <span class="menu-logo menu-height">
-        <a class="logo" href="/">LOGO</a>
+        <a class="logo" href="/">Erikson Oliveira</a>
       </span>
       <span class="mobile-btn"></span>
       <nav class="menu-nav menu-height mobile-menu">
         <ul>
           <li><a href="#header">Home</a></li>
-          <li><a href="#products">Products</a></li>
-          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li><a href="#about">About us</a></li>
         </ul>
       </nav>
     </header>
 
     <div id="body">
       <section id="header">
-        <div id="header-title-wrapper">
-          <div id="header-title">PLAN YOUR NEXT TRIP</div>
-          <div id="header-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+        <div id="header-title-wrapper" class="align-middle">
+          <div class="">
+            <img src="img/me.JPG" class="round-image mx-auto"/>
+          </div>
+          <div id="header-title">Erikson Oliveira</div>
+          <div id="header-subtitle">Web Developer</div>
         </div>
 
           <div class="slide">
@@ -46,8 +53,21 @@
           <a class="next" onclick="rotateSlide(1)">&#10095;</a>
 
       </section>
+      <section id="about" class="widget">
+        <div class="container">
+          <h2 class="text-center">About Me</h2>
+          <div class="">
+            <img src="img/about_me.JPG" class="round-image mx-auto"/>
+          </div>
+          <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla, ante ut pretium hendrerit, libero libero scelerisque lacus, ut luctus erat odio et ipsum. Donec nec urna lobortis, suscipit ligula nec, eleifend sapien. Sed tincidunt purus a turpis dapibus pulvinar. Nulla ac porttitor odio.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla, ante ut pretium hendrerit, libero libero scelerisque lacus, ut luctus erat odio et ipsum. Donec nec urna lobortis, suscipit ligula nec, eleifend sapien. Sed tincidunt purus a turpis dapibus pulvinar. Nulla ac porttitor odio.</p>
+          </div>
+        </div>
+      </section>
       <section id="products" class="widget">
-        <div id="prod-header" class="widget-header">See some of our products</div>
+        <h2 id="prod-header" class="text-center">See some of our products</h2>
         <div id="prod-menu">
           <div>
             <div class="prod-menu-item" data-target="#prod-1">Item 1</div>
@@ -74,33 +94,36 @@
           <div class="prod-desc widget-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla, ante ut pretium hendrerit, libero libero scelerisque lacus, ut luctus erat odio et ipsum. Donec nec urna lobortis, suscipit ligula nec, eleifend sapien. Sed tincidunt purus a turpis dapibus pulvinar. Nulla ac porttitor odio. </div>
         </div>
       </section>
-      <section id="services" class="animate">
-        <div id="services-inner">
-          <div id="serv-header" class="widget-header">See some of our services</div>
-          <div class="row serv-row" style="margin: auto;">
-            <div class="serv-elem col-lg-4">
-              <div class="serv-img">
+      <section id="projects" class="animate">
+        <div id="projects-inner">
+          <h2 id="proj-header" class="text-center">See some of my projects</h2>
+          <div class="row proj-row" style="margin: auto;">
+            <div class="proj-elem col-lg-4">
+              <div class="proj-img">
                 <img class="img-responsive" src=""/>
               </div>
-              <div id="serv-desc" class="widget-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla, ante ut pretium hendrerit, libero libero scelerisque lacus, ut luctus erat odio et ipsum. Donec nec urna lobortis, suscipit ligula nec, eleifend sapien. Sed tincidunt purus a turpis dapibus pulvinar. Nulla ac porttitor odio. </div>
+              <div id="proj-desc" class="widget-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla, ante ut pretium hendrerit, libero libero scelerisque lacus, ut luctus erat odio et ipsum. Donec nec urna lobortis, suscipit ligula nec, eleifend sapien. Sed tincidunt purus a turpis dapibus pulvinar. Nulla ac porttitor odio. </div>
             </div>
-            <div class="serv-elem col-lg-4">
-              <div class="serv-img">
+            <div class="proj-elem col-lg-4">
+              <div class="proj-img">
                 <img class="img-responsive" src=""/>
               </div>
-              <div id="serv-desc" class="widget-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla, ante ut pretium hendrerit, libero libero scelerisque lacus, ut luctus erat odio et ipsum. Donec nec urna lobortis, suscipit ligula nec, eleifend sapien. Sed tincidunt purus a turpis dapibus pulvinar. Nulla ac porttitor odio. </div>
+              <div id="proj-desc" class="widget-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla, ante ut pretium hendrerit, libero libero scelerisque lacus, ut luctus erat odio et ipsum. Donec nec urna lobortis, suscipit ligula nec, eleifend sapien. Sed tincidunt purus a turpis dapibus pulvinar. Nulla ac porttitor odio. </div>
             </div>
-            <div class="serv-elem col-lg-4">
-              <div class="serv-img">
+            <div class="proj-elem col-lg-4">
+              <div class="proj-img">
                 <img class="img-responsive" src=""/>
               </div>
-              <div id="serv-desc" class="widget-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla, ante ut pretium hendrerit, libero libero scelerisque lacus, ut luctus erat odio et ipsum. Donec nec urna lobortis, suscipit ligula nec, eleifend sapien. Sed tincidunt purus a turpis dapibus pulvinar. Nulla ac porttitor odio. </div>
+              <div id="proj-desc" class="widget-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla, ante ut pretium hendrerit, libero libero scelerisque lacus, ut luctus erat odio et ipsum. Donec nec urna lobortis, suscipit ligula nec, eleifend sapien. Sed tincidunt purus a turpis dapibus pulvinar. Nulla ac porttitor odio. </div>
             </div>
           </div>
         </div>
       </section>
+      <section id="skills" class="widget">
+        <h2 class="text-center">Skills</h2>
+      </section>
       <section id="contact" class="widget ">
-        <div id="cont-header" class="widget-header">Contact Us</div>
+        <h2 id="cont-header" class="text-center">Contact Us</h2>
         <div id="wrapper-cont-form" class="animate container">
           <form id="cont-form" method="POST">
             <div class="form-group">
@@ -119,8 +142,7 @@
           </form>
         </div>
       </section>
-      <section id="about" class="widget">
-        <div id="about-header" class="widget-header">About us</div>
+      <section id="footer" class="text-white widget">
         <div class="about-desc widget-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla, ante ut pretium hendrerit, libero libero scelerisque lacus, ut luctus erat odio et ipsum. Donec nec urna lobortis, suscipit ligula nec, eleifend sapien. Sed tincidunt purus a turpis dapibus pulvinar. Nulla ac porttitor odio. </div>
 
         <div class="social-links">
