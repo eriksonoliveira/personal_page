@@ -57,7 +57,7 @@
         <div class="container">
           <h2 class="text-center">About Me</h2>
           <div class="">
-            <img src="img/about_me.JPG" class="round-image mx-auto"/>
+            <img src="img/about_me.JPG" class="round-image mx-auto my-3"/>
           </div>
           <div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla, ante ut pretium hendrerit, libero libero scelerisque lacus, ut luctus erat odio et ipsum. Donec nec urna lobortis, suscipit ligula nec, eleifend sapien. Sed tincidunt purus a turpis dapibus pulvinar. Nulla ac porttitor odio.</p>
@@ -97,22 +97,22 @@
       <section id="projects" class="animate">
         <div id="projects-inner">
           <h2 id="proj-header" class="text-center">See some of my projects</h2>
-          <div class="row proj-row" style="margin: auto;">
-            <div class="proj-elem col-lg-4">
+          <div class="row" style="margin: auto;">
+            <div class="my-3 col-lg-4">
               <div class="proj-img">
-                <img class="img-responsive" src=""/>
+                <img class="img-responsive" src="./img/proj-01.JPG"/>
               </div>
               <div id="proj-desc" class="widget-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla, ante ut pretium hendrerit, libero libero scelerisque lacus, ut luctus erat odio et ipsum. Donec nec urna lobortis, suscipit ligula nec, eleifend sapien. Sed tincidunt purus a turpis dapibus pulvinar. Nulla ac porttitor odio. </div>
             </div>
-            <div class="proj-elem col-lg-4">
+            <div class="my-3 col-lg-4">
               <div class="proj-img">
-                <img class="img-responsive" src=""/>
+                <img class="img-responsive" src="./img/proj-01.JPG" data-toggle="modal" data-target="#proj01Modal"/>
               </div>
               <div id="proj-desc" class="widget-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla, ante ut pretium hendrerit, libero libero scelerisque lacus, ut luctus erat odio et ipsum. Donec nec urna lobortis, suscipit ligula nec, eleifend sapien. Sed tincidunt purus a turpis dapibus pulvinar. Nulla ac porttitor odio. </div>
             </div>
-            <div class="proj-elem col-lg-4">
+            <div class="my-3 col-lg-4">
               <div class="proj-img">
-                <img class="img-responsive" src=""/>
+                <img class="img-responsive" src="./img/proj-02.JPG"/>
               </div>
               <div id="proj-desc" class="widget-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla, ante ut pretium hendrerit, libero libero scelerisque lacus, ut luctus erat odio et ipsum. Donec nec urna lobortis, suscipit ligula nec, eleifend sapien. Sed tincidunt purus a turpis dapibus pulvinar. Nulla ac porttitor odio. </div>
             </div>
@@ -120,7 +120,47 @@
         </div>
       </section>
       <section id="skills" class="widget">
-        <h2 class="text-center">Skills</h2>
+        <div class="container">
+          <h2 class="text-center">Skills</h2>
+          <div>
+              <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+          <ul class="list-inline list-icons">
+            <li class="list-inline-item">
+              <i class="devicons devicons-html5"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-css3"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-javascript"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-jquery"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-sass"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-less"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-bootstrap"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-wordpress"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-grunt"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-gulp"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-npm"></i>
+            </li>
+          </ul>
+          </div>
+        </div>
       </section>
       <section id="contact" class="widget ">
         <h2 id="cont-header" class="text-center">Contact Us</h2>
@@ -159,12 +199,35 @@
       </section>
     </div>
 
+    <!-- Modal -->
+    <div class="modal fade" id="proj01Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!--  Jquery  -->
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"
 			  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
 			  crossorigin="anonymous"></script>
     <!-- Plugin JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <!--  Bootstrap JS  -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
     <!--  Custom JS  -->
     <script src="js/script.js"></script>
   </body>

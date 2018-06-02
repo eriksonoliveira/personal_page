@@ -318,13 +318,11 @@ body {
   margin: 40px auto 0 auto;
 }
 
-.proj-elem {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
+
 
 .proj-img {
-    margin-top: 20px;
+  margin-top: 20px;
+  cursor: pointer;
 }
 
 .proj-img img {
