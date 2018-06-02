@@ -2,15 +2,18 @@
 <html>
   <head>
     <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!--  Custom CSS  -->
     <link rel="stylesheet" href="css/style.css"/>
     <!--  Bootstrap V3.3.7  -->
-<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>-->
-    <!--  Bootstrap V3.3.7  -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>-->
+    <!--  Bootstrap V4.1.1  -->
+    <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,500,700" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
     <title>Erikson Oliveira - Web developer</title>
   </head>
   <body>
@@ -41,17 +44,19 @@
           <div id="header-subtitle">Web Developer</div>
         </div>
 
-          <div class="slide">
-            <div id="img-1" class="header-img">
-            </div>
-            <div id="img-2" class="header-img">
-            </div>
-            <div id="img-3" class="header-img">
-            </div>
+        <div class="slide">
+          <div id="img-1" class="header-img">
           </div>
-          <a class="prev" onclick="rotateSlide(0)">&#10094;</a>
-          <a class="next" onclick="rotateSlide(1)">&#10095;</a>
+          <div id="img-2" class="header-img">
+          </div>
+          <div id="img-3" class="header-img">
+          </div>
+        </div>
+        <a class="prev" onclick="rotateSlide(0)">&#10094;</a>
+        <a class="next" onclick="rotateSlide(1)">&#10095;</a>
 
+        <div class="scroll-trigger btn"><a href="#about"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+</div>
       </section>
       <section id="about" class="widget">
         <div class="container">
@@ -66,34 +71,7 @@
           </div>
         </div>
       </section>
-      <section id="products" class="widget">
-        <h2 id="prod-header" class="text-center">See some of our products</h2>
-        <div id="prod-menu">
-          <div>
-            <div class="prod-menu-item" data-target="#prod-1">Item 1</div>
-            <div class="prod-menu-item" data-target="#prod-2">Item 2</div>
-            <div class="prod-menu-item" data-target="#prod-3">Item 3</div>
-          </div>
-        </div>
-        <div id="prod-1" class="prod-item">
-          <div class="prod-img">
-            <img src=""/>
-          </div>
-          <div class="prod-desc widget-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla, ante ut pretium hendrerit, libero libero scelerisque lacus, ut luctus erat odio et ipsum. Donec nec urna lobortis, suscipit ligula nec, eleifend sapien. Sed tincidunt purus a turpis dapibus pulvinar. Nulla ac porttitor odio. </div>
-        </div>
-        <div id="prod-2" class="prod-item">
-          <div class="prod-img">
-            <img src=""/>
-          </div>
-          <div class="prod-desc widget-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla, ante ut pretium hendrerit, libero libero scelerisque lacus, ut luctus erat odio et ipsum. Donec nec urna lobortis, suscipit ligula nec, eleifend sapien. Sed tincidunt purus a turpis dapibus pulvinar. Nulla ac porttitor odio. </div>
-        </div>
-        <div id="prod-3" class="prod-item">
-          <div class="prod-img">
-            <img src=""/>
-          </div>
-          <div class="prod-desc widget-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla, ante ut pretium hendrerit, libero libero scelerisque lacus, ut luctus erat odio et ipsum. Donec nec urna lobortis, suscipit ligula nec, eleifend sapien. Sed tincidunt purus a turpis dapibus pulvinar. Nulla ac porttitor odio. </div>
-        </div>
-      </section>
+
       <section id="projects" class="animate">
         <div id="projects-inner">
           <h2 id="proj-header" class="text-center">See some of my projects</h2>
@@ -121,10 +99,10 @@
       </section>
       <section id="skills" class="widget">
         <div class="container">
-          <h2 class="text-center">Skills</h2>
+          <h2 class="skills-header text-center">Skills</h2>
           <div>
-              <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-          <ul class="list-inline list-icons">
+              <div class="skills-subheader mb-3 text-center">Programming Languages &amp; Tools</div>
+          <ul class="list-inline list-icons text-center">
             <li class="list-inline-item">
               <i class="devicons devicons-html5"></i>
             </li>
@@ -138,22 +116,22 @@
               <i class="devicons devicons-jquery"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicons devicons-sass"></i>
+              <i class="devicons devicons-php"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicons devicons-less"></i>
+              <i class="devicons devicons-mysql"></i>
             </li>
             <li class="list-inline-item">
               <i class="devicons devicons-bootstrap"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicons devicons-wordpress"></i>
+              <i class="devicons devicons-react"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicons devicons-grunt"></i>
+              <i class="devicons devicons-git"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicons devicons-gulp"></i>
+              <i class="devicons devicons-brackets"></i>
             </li>
             <li class="list-inline-item">
               <i class="devicons devicons-npm"></i>
@@ -188,11 +166,9 @@
         <div class="social-links">
           <ul id="links-1">
             <li class="facebook"><a  class="circle-icon" href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-            <li class="instagram"><a class="circle-icon" href=""><i class="fa fa-instagram" aria-hidden="true"></i>
-</a></li>
             <li class="linkedin"><a class="circle-icon" href=""><i class="fa fa-linkedin" aria-hidden="true"></i>
 </a></li>
-            <li class="pinterest"><a class="circle-icon" href=""><i class="fa fa-pinterest-p" aria-hidden="true"></i>
+            <li class="pinterest"><a class="circle-icon" href=""><i class="devicons devicons-github"></i>
 </a></li>
           </ul>
         </div>
@@ -221,13 +197,11 @@
     </div>
 
     <!--  Jquery  -->
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
-			  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-			  crossorigin="anonymous"></script>
+    <script src="./vendor/jquery/jquery.min.js"></script>
     <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="./vendor/jquery-easing/jquery.easing.min.js"></script>
     <!--  Bootstrap JS  -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
     <!--  Custom JS  -->
     <script src="js/script.js"></script>
   </body>

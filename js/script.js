@@ -40,7 +40,7 @@ $(".mobile-btn").click(function() {
   $(".mobile-menu, html, body").toggleClass('active');
 });
 
-/*Hides de menu if the user clicks aniwhere in
+/*Hides the menu if the user clicks anywhere in
 the document that is not inside the menu*/
 $(document).click(function(event) {
     if($(event.target).closest(".mobile-menu, .mobile-btn").length == 0) {
