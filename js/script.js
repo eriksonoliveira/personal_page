@@ -1,23 +1,5 @@
-//products menu
-var classActive = 'active';
-
-/*makes sure that the first item is active on page load*/
-$(".prod-menu-item").first().addClass(classActive);
-$(".prod-item").first().addClass(classActive);
-
-$(".prod-menu-item").click(function(e) {
-  e.preventDefault();
-  var itemId = $(this).attr("data-target");
-
-  /*remove class active from the previously
-  clicked item and adds to the current item*/
-  $(".prod-menu-item, .prod-item").removeClass(classActive);
-  $(this).addClass(classActive);
-  $(itemId).addClass(classActive);
-});
-
 //animate to the target section on click
-$("nav a").click(function(e) {
+$("nav a, .scroll-trigger a").click(function(e) {
   e.preventDefault();
 
   var id = $(this).attr("href"),
@@ -50,41 +32,14 @@ $(document).click(function(event) {
     }
 })
 
-//Slide
-//Adds the class 'active' to the first slide on start
-$(".slide >:first").addClass('active');
-
-
-function rotateSlide(control) {
-  var activeSlide = $(".slide > .active"),
-      nextSlide = activeSlide.next(),
-      prevSlide = activeSlide.prev();
-
-
-  if(nextSlide.length == 0) {
-    nextSlide = $(".slide >:first");
-  }
-  if(prevSlide.length == 0) {
-    prevSlide = $(".slide >:last");
-  }
-
-  activeSlide.removeClass('active');
-  if(control == 1){
-    nextSlide.addClass('active');
-  }
-  if(control == 0){
-    prevSlide.addClass('active');
-  }
-}
-
-/*setInterval(rotateSlide, 5000);*/
-
 //animate sections on scroll
 (function() {
   var $target = $('.animate'),
       animationClass = 'anime-start',
       offset = $(window).height() * 3/4,
-      menu = $('.menu');
+      menu = $('.menu'),
+      menuLogo = $('.menu-logo'),
+      navLinks = $('.menu-nav ul li a');
 
   function animeScroll() {
     var documentTop = $(document).scrollTop();
@@ -97,10 +52,14 @@ function rotateSlide(control) {
     })
 
     if(documentTop > 0 ) {
-      menu.addClass('fix-menu');
+      $(menu).addClass('fix-menu');
+      $(menuLogo).addClass('fix-menu');
+      $(navLinks).addClass('fix-menu');
     } else {
       if (menu.hasClass('fix-menu')) {
-        menu.removeClass('fix-menu');
+        $(menu).removeClass('fix-menu');
+        $(menuLogo).removeClass('fix-menu');
+        $(navLinks).removeClass('fix-menu');
       }
     }
 

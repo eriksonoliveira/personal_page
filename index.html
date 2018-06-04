@@ -4,8 +4,6 @@
     <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <!--  Custom CSS  -->
     <link rel="stylesheet" href="css/style.css"/>
-    <!--  Bootstrap V3.3.7  -->
-    <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>-->
     <!--  Bootstrap V4.1.1  -->
     <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -20,7 +18,7 @@
 
     <header class="menu menu-height">
       <span class="menu-logo menu-height">
-        <a class="logo" href="/">Erikson Oliveira</a>
+        <span class="logo">Erikson Oliveira</span>
       </span>
       <span class="mobile-btn"></span>
       <nav class="menu-nav menu-height mobile-menu">
@@ -36,29 +34,31 @@
 
     <div id="body">
       <section id="header">
-        <div id="header-title-wrapper" class="align-middle">
-          <div class="">
-            <img src="img/me.JPG" class="round-image mx-auto"/>
+        <div class="header-inner">
+          <div id="header-title-wrapper" class="align-middle">
+            <div class="">
+              <img src="img/me.JPG" class="round-image mx-auto"/>
+            </div>
+            <div id="header-title">Erikson Oliveira</div>
+            <div id="header-subtitle">Web Developer</div>
           </div>
-          <div id="header-title">Erikson Oliveira</div>
-          <div id="header-subtitle">Web Developer</div>
         </div>
 
-        <div class="slide">
-          <div id="img-1" class="header-img">
-          </div>
-          <div id="img-2" class="header-img">
-          </div>
+        <div class="header-background">
           <div id="img-3" class="header-img">
           </div>
         </div>
-        <a class="prev" onclick="rotateSlide(0)">&#10094;</a>
-        <a class="next" onclick="rotateSlide(1)">&#10095;</a>
 
-        <div class="scroll-trigger btn"><a href="#about"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
-</div>
+        <div class="header-scroll-trigger mb-3">
+          <div class="scroll-trigger btn">
+            <a href="#about">
+              <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
       </section>
-      <section id="about" class="widget">
+      <section id="about" class="padding-y">
         <div class="container">
           <h2 class="text-center">About Me</h2>
           <div class="">
@@ -78,26 +78,26 @@
           <div class="row" style="margin: auto;">
             <div class="my-3 col-lg-4">
               <div class="proj-img">
-                <img class="img-responsive" src="./img/proj-01.JPG"/>
-              </div>
-              <div id="proj-desc" class="widget-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla, ante ut pretium hendrerit, libero libero scelerisque lacus, ut luctus erat odio et ipsum. Donec nec urna lobortis, suscipit ligula nec, eleifend sapien. Sed tincidunt purus a turpis dapibus pulvinar. Nulla ac porttitor odio. </div>
-            </div>
-            <div class="my-3 col-lg-4">
-              <div class="proj-img">
                 <img class="img-responsive" src="./img/proj-01.JPG" data-toggle="modal" data-target="#proj01Modal"/>
               </div>
               <div id="proj-desc" class="widget-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla, ante ut pretium hendrerit, libero libero scelerisque lacus, ut luctus erat odio et ipsum. Donec nec urna lobortis, suscipit ligula nec, eleifend sapien. Sed tincidunt purus a turpis dapibus pulvinar. Nulla ac porttitor odio. </div>
             </div>
             <div class="my-3 col-lg-4">
               <div class="proj-img">
-                <img class="img-responsive" src="./img/proj-02.JPG"/>
+                <img class="img-responsive" src="./img/proj-01.JPG" data-toggle="modal" data-target="#proj02Modal"/>
+              </div>
+              <div id="proj-desc" class="widget-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla, ante ut pretium hendrerit, libero libero scelerisque lacus, ut luctus erat odio et ipsum. Donec nec urna lobortis, suscipit ligula nec, eleifend sapien. Sed tincidunt purus a turpis dapibus pulvinar. Nulla ac porttitor odio. </div>
+            </div>
+            <div class="my-3 col-lg-4">
+              <div class="proj-img">
+                <img class="img-fluid" src="./img/proj-02.JPG" data-toggle="modal" data-target="#proj03Modal"/>
               </div>
               <div id="proj-desc" class="widget-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla, ante ut pretium hendrerit, libero libero scelerisque lacus, ut luctus erat odio et ipsum. Donec nec urna lobortis, suscipit ligula nec, eleifend sapien. Sed tincidunt purus a turpis dapibus pulvinar. Nulla ac porttitor odio. </div>
             </div>
           </div>
         </div>
       </section>
-      <section id="skills" class="widget">
+      <section id="skills" class="padding-y">
         <div class="container">
           <h2 class="skills-header text-center">Skills</h2>
           <div>
@@ -141,22 +141,22 @@
         </div>
       </section>
       <section id="contact" class="widget ">
-        <h2 id="cont-header" class="text-center">Contact Us</h2>
-        <div id="wrapper-cont-form" class="animate container">
+        <h2 id="cont-header" class="text-center">Contact Me</h2>
+        <div id="wrapper-cont-form" class="animate container mt-5">
           <form id="cont-form" method="POST">
             <div class="form-group">
               <label for="name">Name</label>
-              <input id="name" name="name" type="text" class="form-field form-control">
+              <input id="name" type="text" class="form-field form-control" name="name">
             </div>
             <div class="form-group">
               <label for="email">E-mail</label>
-              <input id="email" type="email" class="form-field form-control">
+              <input id="email" type="email" class="form-field form-control" name="email">
             </div>
             <div class="form-group">
               <label for="message">Message</label>
-              <textarea id="message" maxlength="500" class="form-field form-control"></textarea>
+              <textarea id="message" maxlength="500" class="form-field form-control" name="message"></textarea>
             </div>
-              <input id="send-btn" type="submit" value="SEND">
+              <input id="send-btn" class="btn" type="submit" value="SEND">
           </form>
         </div>
       </section>
@@ -176,21 +176,64 @@
     </div>
 
     <!-- Modal -->
+    <!--  Proj01  -->
     <div class="modal fade" id="proj01Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <h5 class="modal-title" id="exampleModalLabel">App 001</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
+            <img class="img-fluid" src="./img/proj-01.JPG"/>
             ...
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  Proj02  -->
+    <div class="modal fade" id="proj02Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">App 002</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img class="img-fluid" src="./img/proj-01.JPG"/>
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  Proj03  -->
+    <div class="modal fade" id="proj03Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">App 003</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img class="img-fluid" src="./img/proj-02.JPG"/>
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
