@@ -1,3 +1,19 @@
+<?PHP
+require 'email.php';
+
+if(isset($_POST['name']) && !empty($_POST['name'])) {
+  $name = addslashes($_POST['name']);
+  $email = addslashes($_POST['email']);
+  $message = addslashes($_POST['message']);
+
+  if(!empty($name) && !empty($email) && !empty($message)) {
+    $e = new Email();
+    $e->sendMessage($name, $email, $message);
+
+
+  }
+}
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -168,7 +184,7 @@
             <li class="facebook"><a  class="circle-icon" href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
             <li class="linkedin"><a class="circle-icon" href=""><i class="fa fa-linkedin" aria-hidden="true"></i>
 </a></li>
-            <li class="pinterest"><a class="circle-icon" href=""><i class="devicons devicons-github"></i>
+            <li class="pinterest"><a class="circle-icon" href=""><i class="fa fa-github" aria-hidden="true"></i>
 </a></li>
           </ul>
         </div>
