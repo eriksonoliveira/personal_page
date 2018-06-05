@@ -185,15 +185,17 @@ body {
   color: #FFF;
   border-top: 1px solid #111;
   border-bottom: 1px solid #111;
-  background-image: url("../img/img-4.jpg");
+/*  background-image: url("../img/img-4.jpg");*/
+  background-image: url("../img/codes.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-    justify-content: space-between;
-    display: flex;
-    align-items: center;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+/*  filter: blur(1px);*/
 }
 
 #projects::before {
@@ -216,13 +218,43 @@ body {
 }
 
 .proj-img {
-  margin-top: 20px;
   cursor: pointer;
+}
+
+.proj-img-wrap {
+  position: relative;
+  display: inline-block;
+}
+
+.proj-img:hover .proj-img-wrap::before {
+/*  background: linear-gradient(359deg, rgba(7, 8, 8, .7) 0%, rgba(233, 235, 235, .2) 33%, rgba(209, 209, 209, .3) 50%, rgba(233, 235, 235, .2) 67%, rgba(8, 8, 8, .7) 99%);*/
+  background: rgba(209 ,209 ,209 ,.3);
+}
+
+.proj-name {
+  position: absolute;
+  display: inline;
+  font-size: 2rem;
+  text-shadow: 2px 2px 4px #222;
+}
+
+.proj-name:hover {
+  text-decoration: underline;
+}
+
+.proj-img-wrap::before {
+  position: absolute;
+  top: 0; right: 0;
+  left: 0; bottom: 0;
+  content: '';
+/*  background: rgba(209 ,209 ,209 ,.3);*/
+  background: linear-gradient(359deg, rgba(7, 8, 8, .5) 0%, rgba(233, 235, 235, .2) 33%, rgba(209, 209, 209, .3) 50%, rgba(233, 235, 235, .2) 67%, rgba(8, 8, 8, .5) 99%);
+  transition: background .2s;
 }
 
 .proj-img img {
   display: block;
-  margin: auto;
+/*  margin: auto;*/
   border: 1px solid #AAA;
   height: 220px;
   background-color: rgba(150, 150, 150, .2);
@@ -411,15 +443,15 @@ body {
   padding-top: 8px;
 }
 
-.devicons-github::after {
-  content: "\e60a";
+.fa-github::after {
+  content: "\f09b";
   display: block;
   position: absolute;
   margin-top: 10px;
   margin-left: -10px;
   z-index: -1;
   color: #FFF;
-  background: #BD081C;
+  background: #3BAF4E;
   width: 35px;
   height: 35px;
   border-radius: 50%;
@@ -459,7 +491,7 @@ body {
   html.active, body.active {
 /*    overflow-y: hidden;*/
   }
-  
+
 .mobile-btn {
   width: 36px;
   height: 36px;
@@ -539,11 +571,11 @@ body {
   font-size: 12px;
   color: #222;
 }
- 
+
 .menu-nav.mobile-menu li a:hover{
   background-color: rgba(66, 220, 163, .3);
 }
-  
+
 .menu-nav.mobile-menu li:hover a {
   color: #555;
 }

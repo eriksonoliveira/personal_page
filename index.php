@@ -1,3 +1,19 @@
+<?PHP
+require 'email.php';
+
+if(isset($_POST['name']) && !empty($_POST['name'])) {
+  $name = addslashes($_POST['name']);
+  $email = addslashes($_POST['email']);
+  $message = addslashes($_POST['message']);
+
+  if(!empty($name) && !empty($email) && !empty($message)) {
+    $e = new Email();
+    $e->sendMessage($name, $email, $message);
+
+
+  }
+}
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -77,20 +93,29 @@
           <h2 id="proj-header" class="text-center">See some of my projects</h2>
           <div class="row" style="margin: auto;">
             <div class="my-3 col-lg-4">
-              <div class="proj-img">
-                <img class="img-responsive" src="./img/proj-01.JPG" data-toggle="modal" data-target="#proj01Modal"/>
+              <div class="proj-img d-flex justify-content-center">
+                <div class="proj-img-wrap d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#proj01Modal">
+                  <span class="proj-name">Proj 01</span>
+                  <img class="img-responsive" src="./img/proj-01.JPG" />
+                </div>
               </div>
               <div id="proj-desc" class="widget-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla, ante ut pretium hendrerit, libero libero scelerisque lacus, ut luctus erat odio et ipsum. Donec nec urna lobortis, suscipit ligula nec, eleifend sapien. Sed tincidunt purus a turpis dapibus pulvinar. Nulla ac porttitor odio. </div>
             </div>
             <div class="my-3 col-lg-4">
-              <div class="proj-img">
-                <img class="img-responsive" src="./img/proj-01.JPG" data-toggle="modal" data-target="#proj02Modal"/>
+              <div class="proj-img d-flex justify-content-center">
+                <div class="proj-img-wrap d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#proj02Modal">
+                  <span class="proj-name">Proj 02</span>
+                  <img class="img-responsive" src="./img/proj-01.JPG" />
+                </div>
               </div>
               <div id="proj-desc" class="widget-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla, ante ut pretium hendrerit, libero libero scelerisque lacus, ut luctus erat odio et ipsum. Donec nec urna lobortis, suscipit ligula nec, eleifend sapien. Sed tincidunt purus a turpis dapibus pulvinar. Nulla ac porttitor odio. </div>
             </div>
             <div class="my-3 col-lg-4">
-              <div class="proj-img">
-                <img class="img-fluid" src="./img/proj-02.JPG" data-toggle="modal" data-target="#proj03Modal"/>
+              <div class="proj-img d-flex justify-content-center">
+                <div class="proj-img-wrap d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#proj03Modal">
+                  <span class="proj-name">Proj 03</span>
+                  <img class="img-responsive" src="./img/proj-02.JPG" />
+                </div>
               </div>
               <div id="proj-desc" class="widget-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla, ante ut pretium hendrerit, libero libero scelerisque lacus, ut luctus erat odio et ipsum. Donec nec urna lobortis, suscipit ligula nec, eleifend sapien. Sed tincidunt purus a turpis dapibus pulvinar. Nulla ac porttitor odio. </div>
             </div>
@@ -113,28 +138,28 @@
               <i class="devicons devicons-javascript"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicons devicons-jquery"></i>
-            </li>
-            <li class="list-inline-item">
               <i class="devicons devicons-php"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-mysql"></i>
             </li>
             <li class="list-inline-item">
               <i class="devicons devicons-bootstrap"></i>
             </li>
             <li class="list-inline-item">
+              <i class="devicons devicons-jquery"></i>
+            </li>
+            <li class="list-inline-item">
               <i class="devicons devicons-react"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-mysql"></i>
             </li>
             <li class="list-inline-item">
               <i class="devicons devicons-git"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicons devicons-brackets"></i>
+              <i class="devicons devicons-npm"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicons devicons-npm"></i>
+              <i class="devicons devicons-brackets"></i>
             </li>
           </ul>
           </div>
@@ -165,10 +190,10 @@
 
         <div class="social-links">
           <ul id="links-1">
-            <li class="facebook"><a  class="circle-icon" href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-            <li class="linkedin"><a class="circle-icon" href=""><i class="fa fa-linkedin" aria-hidden="true"></i>
+            <li class="facebook"><a  class="circle-icon" href="https://www.facebook.com/erikson.magno" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li class="linkedin"><a class="circle-icon" href="https://www.linkedin.com/in/erikson-de-oliveira-8b428977/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i>
 </a></li>
-            <li class="pinterest"><a class="circle-icon" href=""><i class="devicons devicons-github"></i>
+            <li class="github"><a class="circle-icon" href="https://github.com/eriksonoliveira" target="_blank"><i class="fa fa-github" aria-hidden="true"></i>
 </a></li>
           </ul>
         </div>
