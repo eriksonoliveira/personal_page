@@ -1,6 +1,8 @@
 <?PHP
 require 'email.php';
 
+$alert = '';
+
 if(isset($_POST['name']) && !empty($_POST['name'])) {
   $name = addslashes($_POST['name']);
   $email = addslashes($_POST['email']);
@@ -8,7 +10,11 @@ if(isset($_POST['name']) && !empty($_POST['name'])) {
 
   if(!empty($name) && !empty($email) && !empty($message)) {
     $e = new Email();
-    $e->sendMessage($name, $email, $message);
+    if($e->sendMessage($name, $email, $message)) {
+      $alert = "Your message has been sent successfully";
+    } else {
+      $alert = "Unable to send. Please try again.";
+    }
 
 
   }
@@ -183,6 +189,9 @@ if(isset($_POST['name']) && !empty($_POST['name'])) {
             </div>
               <input id="send-btn" class="btn" type="submit" value="SEND">
           </form>
+          <div class="message-alert">
+            <p><?PHP echo $alert; ?></p>
+          </div>
         </div>
       </section>
       <section id="footer" class="text-white widget">
