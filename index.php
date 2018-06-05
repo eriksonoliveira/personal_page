@@ -105,7 +105,7 @@ if(isset($_POST['name']) && !empty($_POST['name'])) {
               <div class="proj-img d-flex justify-content-center">
                 <div class="proj-img-wrap d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#proj02Modal">
                   <span class="proj-name">Proj 02</span>
-                  <img class="img-responsive" src="./img/proj-01.JPG" />
+                  <img class="img-responsive" src="./img/proj-02.JPG" />
                 </div>
               </div>
               <div id="proj-desc" class="widget-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla, ante ut pretium hendrerit, libero libero scelerisque lacus, ut luctus erat odio et ipsum. Donec nec urna lobortis, suscipit ligula nec, eleifend sapien. Sed tincidunt purus a turpis dapibus pulvinar. Nulla ac porttitor odio. </div>
@@ -114,7 +114,7 @@ if(isset($_POST['name']) && !empty($_POST['name'])) {
               <div class="proj-img d-flex justify-content-center">
                 <div class="proj-img-wrap d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#proj03Modal">
                   <span class="proj-name">Proj 03</span>
-                  <img class="img-responsive" src="./img/proj-02.JPG" />
+                  <img class="img-responsive" src="./img/proj-03.JPG" />
                 </div>
               </div>
               <div id="proj-desc" class="widget-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla, ante ut pretium hendrerit, libero libero scelerisque lacus, ut luctus erat odio et ipsum. Donec nec urna lobortis, suscipit ligula nec, eleifend sapien. Sed tincidunt purus a turpis dapibus pulvinar. Nulla ac porttitor odio. </div>
@@ -233,7 +233,7 @@ if(isset($_POST['name']) && !empty($_POST['name'])) {
             </button>
           </div>
           <div class="modal-body">
-            <img class="img-fluid" src="./img/proj-01.JPG"/>
+            <img class="img-fluid" src="./img/proj-02.JPG"/>
             ...
           </div>
           <div class="modal-footer">
@@ -254,7 +254,7 @@ if(isset($_POST['name']) && !empty($_POST['name'])) {
             </button>
           </div>
           <div class="modal-body">
-            <img class="img-fluid" src="./img/proj-02.JPG"/>
+            <img class="img-fluid" src="./img/proj-03.JPG"/>
             ...
           </div>
           <div class="modal-footer">
