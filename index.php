@@ -62,7 +62,7 @@ if(isset($_POST['name']) && !empty($_POST['name'])) {
               <img src="img/me.JPG" class="round-image mx-auto"/>
             </div>
             <div id="header-title">Erikson Oliveira</div>
-            <div id="header-subtitle">Web Developer</div>
+            <div id="header-subtitle">Hi, I'm a junior Web Developer who specializes<br> in PHP and Javascript development</div>
           </div>
         </div>
 
@@ -87,9 +87,13 @@ if(isset($_POST['name']) && !empty($_POST['name'])) {
             <img src="img/about_me.JPG" class="round-image mx-auto my-3"/>
           </div>
           <div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla, ante ut pretium hendrerit, libero libero scelerisque lacus, ut luctus erat odio et ipsum. Donec nec urna lobortis, suscipit ligula nec, eleifend sapien. Sed tincidunt purus a turpis dapibus pulvinar. Nulla ac porttitor odio.</p>
+            <p>I'm a Full Stack developer who specializes in the development of web applications using PHP and Javascript languages.</p>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla, ante ut pretium hendrerit, libero libero scelerisque lacus, ut luctus erat odio et ipsum. Donec nec urna lobortis, suscipit ligula nec, eleifend sapien. Sed tincidunt purus a turpis dapibus pulvinar. Nulla ac porttitor odio.</p>
+            <p>I started developing applications in 2016 while I was working as a meteorologist in Florianopolis, Brazil, and I realized that there were better ways to do the same work we were doing. I then decide to learn to code so I could build the tools that I had in my mind.</p>
+
+            <p>Since then I became passionate about building tools that are simple to use and help people complete their tasks in a faster and more efficient way.</p>
+
+            <p>When I'm not learning or working on a project, I'm usually spending time with my wife, at the gym, or playing video games.</p>
           </div>
         </div>
       </section>
@@ -101,29 +105,29 @@ if(isset($_POST['name']) && !empty($_POST['name'])) {
             <div class="my-3 col-lg-4">
               <div class="proj-img d-flex justify-content-center">
                 <div class="proj-img-wrap d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#proj01Modal">
-                  <span class="proj-name">Proj 01</span>
+                  <span class="proj-name">Weather Database</span>
                   <img class="img-responsive" src="./img/proj-01.JPG" />
                 </div>
               </div>
-              <div id="proj-desc" class="widget-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla, ante ut pretium hendrerit, libero libero scelerisque lacus, ut luctus erat odio et ipsum. Donec nec urna lobortis, suscipit ligula nec, eleifend sapien. Sed tincidunt purus a turpis dapibus pulvinar. Nulla ac porttitor odio. </div>
+              <div id="proj-desc" class="widget-desc"><p>This system was created to allow meteorologists at the weather office in the Santa Catarina State/Brazil to insert and manage data related to everyday weather events. The system was built with PHP, JS, MySQL, chart.js, and Bootstrap4.</p></div>
             </div>
             <div class="my-3 col-lg-4">
               <div class="proj-img d-flex justify-content-center">
                 <div class="proj-img-wrap d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#proj02Modal">
-                  <span class="proj-name">Proj 02</span>
+                  <span class="proj-name">Local Weather</span>
                   <img class="img-responsive" src="./img/proj-02.JPG" />
                 </div>
               </div>
-              <div id="proj-desc" class="widget-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla, ante ut pretium hendrerit, libero libero scelerisque lacus, ut luctus erat odio et ipsum. Donec nec urna lobortis, suscipit ligula nec, eleifend sapien. Sed tincidunt purus a turpis dapibus pulvinar. Nulla ac porttitor odio. </div>
+              <div id="proj-desc" class="widget-desc">An app that shows the user's local weather information by making AJAX calls to OpenWeatherMap's API. The user can see current weather conditions such as temperature, wind, and cloudiness, as well as, 3 days forecast. </div>
             </div>
             <div class="my-3 col-lg-4">
               <div class="proj-img d-flex justify-content-center">
                 <div class="proj-img-wrap d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#proj03Modal">
-                  <span class="proj-name">Proj 03</span>
+                  <span class="proj-name">Reminder App</span>
                   <img class="img-responsive" src="./img/proj-03.JPG" />
                 </div>
               </div>
-              <div id="proj-desc" class="widget-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla, ante ut pretium hendrerit, libero libero scelerisque lacus, ut luctus erat odio et ipsum. Donec nec urna lobortis, suscipit ligula nec, eleifend sapien. Sed tincidunt purus a turpis dapibus pulvinar. Nulla ac porttitor odio. </div>
+              <div id="proj-desc" class="widget-desc">A reminder app in which users can describe tasks and choose due dates and times. The app is written using the ReactJS framework and the Redux for state management. </div>
             </div>
           </div>
         </div>
@@ -173,6 +177,7 @@ if(isset($_POST['name']) && !empty($_POST['name'])) {
       </section>
       <section id="contact" class="widget ">
         <h2 id="cont-header" class="text-center">Contact Me</h2>
+        <h5 class="text-center">I'd love to hear from you</h5>
         <div id="wrapper-cont-form" class="animate container mt-5">
           <form id="cont-form" method="POST">
             <div class="form-group">
@@ -195,7 +200,7 @@ if(isset($_POST['name']) && !empty($_POST['name'])) {
         </div>
       </section>
       <section id="footer" class="text-white widget">
-        <div class="about-desc widget-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla, ante ut pretium hendrerit, libero libero scelerisque lacus, ut luctus erat odio et ipsum. Donec nec urna lobortis, suscipit ligula nec, eleifend sapien. Sed tincidunt purus a turpis dapibus pulvinar. Nulla ac porttitor odio. </div>
+        <div class="about-desc widget-desc text-center">Erikson Oliveira - 2018</div>
 
         <div class="social-links">
           <ul id="links-1">
@@ -215,14 +220,14 @@ if(isset($_POST['name']) && !empty($_POST['name'])) {
       <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">App 001</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Weather Database</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
             <img class="img-fluid" src="./img/proj-01.JPG"/>
-            ...
+
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -236,14 +241,14 @@ if(isset($_POST['name']) && !empty($_POST['name'])) {
       <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">App 002</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Local Weather</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
             <img class="img-fluid" src="./img/proj-02.JPG"/>
-            ...
+
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -257,14 +262,14 @@ if(isset($_POST['name']) && !empty($_POST['name'])) {
       <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">App 003</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Reminder App</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
             <img class="img-fluid" src="./img/proj-03.JPG"/>
-            ...
+
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
