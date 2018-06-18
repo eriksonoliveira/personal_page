@@ -25,7 +25,7 @@ if(isset($_POST['name']) && !empty($_POST['name'])) {
   <head>
     <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <!--  Custom CSS  -->
-    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css"/>
     <!--  Bootstrap V4.1.1  -->
     <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -59,7 +59,7 @@ if(isset($_POST['name']) && !empty($_POST['name'])) {
         <div class="header-inner">
           <div id="header-title-wrapper" class="align-middle">
             <div class="">
-              <img src="img/me.JPG" class="round-image mx-auto"/>
+              <img src="./assets/img/me.JPG" class="round-image mx-auto"/>
             </div>
             <div id="header-title">Erikson Oliveira</div>
             <div id="header-subtitle">Hi, I'm a junior Web Developer who specializes<br> in PHP and Javascript development</div>
@@ -84,7 +84,7 @@ if(isset($_POST['name']) && !empty($_POST['name'])) {
         <div class="container">
           <h2 class="text-center">About Me</h2>
           <div class="">
-            <img src="img/about_me.JPG" class="round-image mx-auto my-3"/>
+            <img src="./assets/img/about_me.JPG" class="round-image mx-auto my-3"/>
           </div>
           <div>
             <p>I'm a Full Stack developer who specializes in the development of web applications using PHP and Javascript languages.</p>
@@ -106,7 +106,7 @@ if(isset($_POST['name']) && !empty($_POST['name'])) {
               <div class="proj-img d-flex justify-content-center">
                 <div class="proj-img-wrap d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#proj01Modal">
                   <span class="proj-name">Weather Database</span>
-                  <img class="img-responsive" src="./img/proj-01.JPG" />
+                  <img class="img-responsive" src="./assets/img/proj-01.JPG" />
                 </div>
               </div>
               <div id="proj-desc" class="widget-desc"><p>This system was created to allow meteorologists at the weather office in the Santa Catarina State/Brazil to insert and manage data related to everyday weather events. The system was built with PHP, JS, MySQL, chart.js, and Bootstrap4.</p></div>
@@ -115,7 +115,7 @@ if(isset($_POST['name']) && !empty($_POST['name'])) {
               <div class="proj-img d-flex justify-content-center">
                 <div class="proj-img-wrap d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#proj02Modal">
                   <span class="proj-name">Local Weather</span>
-                  <img class="img-responsive" src="./img/proj-02.JPG" />
+                  <img class="img-responsive" src="./assets/img/proj-02.JPG" />
                 </div>
               </div>
               <div id="proj-desc" class="widget-desc">An app that shows the user's local weather information by making AJAX calls to OpenWeatherMap's API. The user can see current weather conditions such as temperature, wind, and cloudiness, as well as, 3 days forecast. </div>
@@ -124,7 +124,7 @@ if(isset($_POST['name']) && !empty($_POST['name'])) {
               <div class="proj-img d-flex justify-content-center">
                 <div class="proj-img-wrap d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#proj03Modal">
                   <span class="proj-name">Reminder App</span>
-                  <img class="img-responsive" src="./img/proj-03.JPG" />
+                  <img class="img-responsive" src="./assets/img/proj-03.JPG" />
                 </div>
               </div>
               <div id="proj-desc" class="widget-desc">A reminder app in which users can describe tasks and choose due dates and times. The app is written using the ReactJS framework and the Redux for state management. </div>
@@ -285,6 +285,6 @@ if(isset($_POST['name']) && !empty($_POST['name'])) {
     <!--  Bootstrap JS  -->
     <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
     <!--  Custom JS  -->
-    <script src="js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
