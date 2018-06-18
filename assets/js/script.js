@@ -14,16 +14,21 @@ $("nav a, .scroll-trigger a").click(function(e) {
   );
 });
 
-//Mobile menu button
-/*When the button is clicked the class active is
-toggled for the menu and the html and body elements */
+/*
+Small screens menu button
+
+When the button is clicked the class active is
+toggled for the menu and the html and body elements.
+*/
 $(".mobile-btn").click(function() {
   $(this).toggleClass('active');
   $(".mobile-menu, html, body").toggleClass('active');
 });
 
-/*Hides the menu if the user clicks anywhere in
-the document that is not inside the menu*/
+/*
+Hides the menu if the user clicks anywhere in
+the document that is not inside the menu
+*/
 $(document).click(function(event) {
     if($(event.target).closest(".mobile-menu, .mobile-btn").length == 0) {
         if($(".mobile-menu").hasClass('active')) {
@@ -41,6 +46,12 @@ $(document).click(function(event) {
       menuLogo = $('.menu-logo'),
       navLinks = $('.menu-nav ul li a');
 
+  /*
+  Show elements on scroll if the distance from the top to the
+  element is greater than window.height() * 3/4
+
+  If the user scrolls the page, make top menu fixed
+  */
   function animeScroll() {
     var documentTop = $(document).scrollTop();
 

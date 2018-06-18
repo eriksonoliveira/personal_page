@@ -9,14 +9,14 @@ if(isset($_POST['name']) && !empty($_POST['name'])) {
   $message = addslashes($_POST['message']);
 
   if(!empty($name) && !empty($email) && !empty($message)) {
+
+    //Create an instance of Email() Class and run sendMessage Method
     $e = new Email();
     if($e->sendMessage($name, $email, $message)) {
       $alert = "Your message has been sent successfully";
     } else {
       $alert = "Unable to send. Please try again.";
     }
-
-
   }
 }
 ?>
@@ -33,7 +33,7 @@ if(isset($_POST['name']) && !empty($_POST['name'])) {
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet"/>
     <link rel="stylesheet" href="./vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
+    <link href="./vendor/devicons/css/devicons.min.css" rel="stylesheet">
     <title>Erikson Oliveira - Web developer</title>
   </head>
   <body>
