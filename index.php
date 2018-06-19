@@ -1,25 +1,3 @@
-<?PHP
-require 'email.php';
-
-$alert = '';
-
-if(isset($_POST['name']) && !empty($_POST['name'])) {
-  $name = addslashes($_POST['name']);
-  $email = addslashes($_POST['email']);
-  $message = addslashes($_POST['message']);
-
-  if(!empty($name) && !empty($email) && !empty($message)) {
-
-    //Create an instance of Email() Class and run sendMessage Method
-    $e = new Email();
-    if($e->sendMessage($name, $email, $message)) {
-      $alert = "Your message has been sent successfully";
-    } else {
-      $alert = "Unable to send. Please try again.";
-    }
-  }
-}
-?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -32,7 +10,7 @@ if(isset($_POST['name']) && !empty($_POST['name'])) {
     <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,500,700" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet"/>
-    <link rel="stylesheet" href="./vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./vendor/font-awesome/css/font-awesome-all.min.css">
     <link href="./vendor/devicons/css/devicons.min.css" rel="stylesheet">
     <title>Erikson Oliveira - Web developer</title>
   </head>
@@ -132,6 +110,7 @@ if(isset($_POST['name']) && !empty($_POST['name'])) {
           </div>
         </div>
       </section>
+
       <section id="skills" class="padding-y">
         <div class="container">
           <h2 class="skills-header text-center">Skills</h2>
@@ -175,6 +154,7 @@ if(isset($_POST['name']) && !empty($_POST['name'])) {
           </div>
         </div>
       </section>
+
       <section id="contact" class="widget ">
         <h2 id="cont-header" class="text-center">Contact Me</h2>
         <h5 class="text-center">I'd love to hear from you</h5>
@@ -192,22 +172,23 @@ if(isset($_POST['name']) && !empty($_POST['name'])) {
               <label for="message">Message</label>
               <textarea id="message" maxlength="500" class="form-field form-control" name="message"></textarea>
             </div>
-              <input id="send-btn" class="btn" type="submit" value="SEND">
+            <input id="send-btn" class="btn" type="submit" value="SEND">
+            <span class="spinner hide">
+              <i class="fas fa-spinner fa-spin"></i>
+            </span>
           </form>
-          <div class="message-alert">
-            <p class="ml-3"><?PHP echo $alert; ?></p>
-          </div>
         </div>
       </section>
+
       <section id="footer" class="text-white widget">
         <div class="about-desc widget-desc text-center">Erikson Oliveira - 2018</div>
 
         <div class="social-links">
           <ul id="links-1">
-            <li class="facebook"><a  class="circle-icon" href="https://www.facebook.com/erikson.magno" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-            <li class="linkedin"><a class="circle-icon" href="https://www.linkedin.com/in/erikson-de-oliveira-8b428977/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i>
+            <li class="facebook"><a  class="circle-icon" href="https://www.facebook.com/erikson.magno" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+            <li class="linkedin"><a class="circle-icon" href="https://www.linkedin.com/in/erikson-de-oliveira-8b428977/" target="_blank"><i class="fab fa-linkedin-in" aria-hidden="true"></i>
 </a></li>
-            <li class="github"><a class="circle-icon" href="https://github.com/eriksonoliveira" target="_blank"><i class="fa fa-github" aria-hidden="true"></i>
+            <li class="github"><a class="circle-icon" href="https://github.com/eriksonoliveira" target="_blank"><i class="fab fa-github" aria-hidden="true"></i>
 </a></li>
           </ul>
         </div>
@@ -269,6 +250,20 @@ if(isset($_POST['name']) && !empty($_POST['name'])) {
           </div>
           <div class="modal-body">
             <img class="img-fluid" src="./assets/img/proj-03.JPG"/>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!--  Email alert  -->
+    <div class="modal fade" id="emailModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
 
           </div>
           <div class="modal-footer">

@@ -350,6 +350,10 @@ body {
   color: #FFF;
 }
 
+.hide {
+  display: none;
+}
+
 #footer {
   background-color: #222;
 }
@@ -408,8 +412,8 @@ body {
   border-radius: 50%;
 }
 
-.fa-facebook::after {
-  content: "\f09a";
+.fa-facebook-f::after {
+  content: "\f39e";
   display: block;
   position: absolute;
   margin-top: 10px;
@@ -423,7 +427,7 @@ body {
   padding-top: 8px;
 }
 
-.fa-linkedin::after {
+.fa-linkedin-in::after {
   content: "\f0e1";
   display: block;
   position: absolute;
