@@ -195,7 +195,7 @@ if(isset($_POST['name']) && !empty($_POST['name'])) {
               <input id="send-btn" class="btn" type="submit" value="SEND">
           </form>
           <div class="message-alert">
-            <p><?PHP echo $alert; ?></p>
+            <p class="ml-3"><?PHP echo $alert; ?></p>
           </div>
         </div>
       </section>
@@ -226,7 +226,7 @@ if(isset($_POST['name']) && !empty($_POST['name'])) {
             </button>
           </div>
           <div class="modal-body">
-            <img class="img-fluid" src="./img/proj-01.JPG"/>
+            <img class="img-fluid" src="./assets/img/proj-01.JPG"/>
 
           </div>
           <div class="modal-footer">
@@ -247,7 +247,7 @@ if(isset($_POST['name']) && !empty($_POST['name'])) {
             </button>
           </div>
           <div class="modal-body">
-            <img class="img-fluid" src="./img/proj-02.JPG"/>
+            <img class="img-fluid" src="./assets/img/proj-02.JPG"/>
 
           </div>
           <div class="modal-footer">
@@ -268,7 +268,7 @@ if(isset($_POST['name']) && !empty($_POST['name'])) {
             </button>
           </div>
           <div class="modal-body">
-            <img class="img-fluid" src="./img/proj-03.JPG"/>
+            <img class="img-fluid" src="./assets/img/proj-03.JPG"/>
 
           </div>
           <div class="modal-footer">
