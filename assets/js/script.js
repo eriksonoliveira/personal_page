@@ -90,7 +90,7 @@ $("#cont-form").on("submit", function(event) {
   var form = $(this);
   var name = $(this).find("input[name=name]").val();
   var email = $(this).find("input[name=email]").val();
-  var message = $(this).find("input[name=message]").val();
+  var message = $(this).find("textarea[name=message]").val();
 
   var data = new FormData();
 
@@ -100,7 +100,7 @@ $("#cont-form").on("submit", function(event) {
 
   $.ajax({
     type: 'POST',
-    url: 'http://projetoy.pc/personal_website/emailHandler.php',
+    url: 'https://eriksonoliveira.com/emailHandler.php',
     data: data,
     dataType: 'json',
     beforeSend: function() {
