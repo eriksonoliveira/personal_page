@@ -216,7 +216,11 @@
         </div>
         <div class="modal-body">
           <img class="img-fluid" src="./assets/img/proj-01.JPG" />
-
+          <div class="middle">
+            <a href="https://eriksonoliveira.com/weather_database" target="_blank">
+              <button class="btn btn-dark view-demo-btn">View Demo</button>
+            </a>
+          </div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -237,7 +241,11 @@
         </div>
         <div class="modal-body">
           <img class="img-fluid" src="./assets/img/proj-02.JPG" />
-
+          <div class="middle">
+            <a href="https://eriksonoliveira.com/weather_app" target="_blank">
+              <button class="btn btn-dark view-demo-btn">View Demo</button>
+            </a>
+          </div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -258,7 +266,11 @@
         </div>
         <div class="modal-body">
           <img class="img-fluid" src="./assets/img/proj-03.JPG" />
-
+          <div class="middle">
+            <a href="https://eriksonoliveira.com/remind_me" target="_blank">
+              <button class="btn btn-dark view-demo-btn">View Demo</button>
+            </a>
+          </div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
