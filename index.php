@@ -356,10 +356,10 @@
   </div>
 
   <!--  Email alert  -->
-  <div class="modal fade" id="emailModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="emailModal" tabindex="-1" role="dialog" aria-labelledby="confirmationMessage" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
       <div class="modal-content">
-        <div class="modal-body">
+        <div class="modal-body" id="confirmationMessage">
 
         </div>
         <div class="modal-footer">
