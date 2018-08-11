@@ -3,6 +3,8 @@
 
 <head>
   <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="I am Erikson Oliveira, a web developer and this is my personal web page.">
+
   <!--  Custom CSS  -->
   <link rel="stylesheet" href="./assets/css/style.css" />
   <!--  Bootstrap V4.1.1  -->
@@ -39,7 +41,7 @@
       <div class="header-inner">
         <div id="header-title-wrapper" class="align-middle">
           <div class="">
-            <img src="./assets/img/me.JPG" class="round-image mx-auto" />
+            <img src="./assets/img/me.JPG" class="round-image mx-auto" alt="My picture"/>
           </div>
           <div id="header-title">Erikson Oliveira</div>
           <div id="header-subtitle">Hi, I'm a junior Web Developer who specializes<br> in PHP and Javascript development</div>
@@ -64,7 +66,7 @@
       <div class="container">
         <h2 class="text-center">About Me</h2>
         <div class="">
-          <img src="./assets/img/about_me.JPG" class="round-image mx-auto my-3" />
+          <img src="./assets/img/about_me.JPG" class="round-image mx-auto my-3" alt="About me"/>
         </div>
         <div>
           <p>I'm a Full Stack developer who specializes in the development of web applications using PHP and Javascript languages.</p>
@@ -89,7 +91,7 @@
                 <img class="img-responsive" src="./assets/img/proj-01.JPG" alt="Project Weather Database" />
               </div>
             </div>
-            <div id="proj-desc" class="widget-desc">
+            <div class="widget-desc proj-desc">
               <p>This system was created to allow meteorologists at the weather office in the Santa Catarina State/Brazil to insert and manage data related to everyday weather events. The system was built with PHP, JS, MySQL, chart.js, and Bootstrap4.</p>
             </div>
           </div>
@@ -100,7 +102,7 @@
                 <img class="img-responsive" src="./assets/img/proj-02.JPG" alt="Project Weather App" />
               </div>
             </div>
-            <div id="proj-desc" class="widget-desc">An app that shows the user's local weather information by making AJAX calls to OpenWeatherMap's API. The user can see current weather conditions such as temperature, wind, and cloudiness, as well as, 3 days forecast. </div>
+            <div class="widget-desc proj-desc">An app that shows the user's local weather information by making AJAX calls to OpenWeatherMap's API. The user can see current weather conditions such as temperature, wind, and cloudiness, as well as, 3 days forecast. </div>
           </div>
           <div class="my-3 col-lg-4">
             <div class="proj-img d-flex justify-content-center">
@@ -109,7 +111,31 @@
                 <img class="img-responsive" src="./assets/img/proj-03.JPG" alt="Project Reminder App" />
               </div>
             </div>
-            <div id="proj-desc" class="widget-desc">A reminder app in which users can describe tasks and choose due dates and times. The app is written using the ReactJS framework and the Redux for state management. </div>
+            <div class="widget-desc proj-desc">A reminder app in which users can describe tasks and choose due dates and times. The app is written using the ReactJS framework and the Redux for state management. </div>
+          </div>
+        </div>
+        <div class="row justify-content-center" style="margin: auto;">
+          <div class="my-3 col-lg-4">
+            <div class="proj-img d-flex justify-content-center">
+              <div class="proj-img-wrap d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#proj04Modal">
+                <span class="proj-name">Clock App</span>
+                <img class="img-responsive" src="./assets/img/proj-04.JPG" alt="Project Clock App" />
+              </div>
+            </div>
+            <div class="widget-desc proj-desc">
+              <p>A timer app built with ReactJS that includes a countdown to a specific date, that can be changed by the user, a timer with minutes and seconds and a stopwatch.</p>
+            </div>
+          </div>
+          <div class="my-3 col-lg-4">
+            <div class="proj-img d-flex justify-content-center">
+              <div class="proj-img-wrap d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#proj05Modal">
+                <span class="proj-name">Weather Map</span>
+                <img class="img-responsive" src="./assets/img/proj-05.JPG" alt="Project Weather Map" />
+              </div>
+            </div>
+            <div class="widget-desc proj-desc">
+              This app was create to be used by the meteorologists at Epagri in their everyday weather forecast presentations in video.
+              Temperature forecast data is received from an API and allows meteorologists to modify the values before they are inserted to the map using Google Maps Javascript API. The app contains 3 sections. The first shows satellite animation from Epagri/Ciram's website. The second is an iframe from windy.com. And the third is the map with the temperatures.</div>
           </div>
         </div>
       </div>
@@ -185,7 +211,7 @@
     </section>
 
     <section id="footer" class="text-white widget">
-      <div class="about-desc widget-desc text-center">Erikson Oliveira - 2018</div>
+      <div class="about-desc widget-desc proj-desc text-center">Erikson Oliveira - 2018</div>
 
       <div class="social-links">
         <ul id="links-1">
@@ -209,7 +235,7 @@
     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Weather Database</h5>
+          <h5 class="modal-title" id="ModalLabel1">Weather Database</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -234,7 +260,7 @@
     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Local Weather</h5>
+          <h5 class="modal-title" id="ModalLabel2">Local Weather</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -259,7 +285,7 @@
     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Reminder App</h5>
+          <h5 class="modal-title" id="ModalLabel2">Reminder App</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -268,6 +294,56 @@
           <img class="img-fluid" src="./assets/img/proj-03.JPG" />
           <div class="middle">
             <a href="https://eriksonoliveira.com/remind_me" target="_blank">
+              <button class="btn btn-dark view-demo-btn">View Demo</button>
+            </a>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--  Proj04  -->
+  <div class="modal fade" id="proj04Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ModalLabel3">Clock App</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+          <img class="img-fluid" src="./assets/img/proj-04.JPG" />
+          <div class="middle">
+            <a href="http://eriksonoliveira.com/Clock_app/" target="_blank">
+              <button class="btn btn-dark view-demo-btn">View Demo</button>
+            </a>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--  Proj05  -->
+  <div class="modal fade" id="proj05Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ModalLabel4">Weather Map</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+          <img class="img-fluid" src="./assets/img/proj-05.JPG" />
+          <div class="middle">
+            <a href="https://eriksonoliveira.com/weather_map" target="_blank">
               <button class="btn btn-dark view-demo-btn">View Demo</button>
             </a>
           </div>

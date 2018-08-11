@@ -255,7 +255,7 @@ body {
   background-color: rgba(150, 150, 150, .2);
 }
 
-#proj-desc {
+.proj-desc {
   width: 333px;
 }
 
@@ -481,7 +481,7 @@ body {
   opacity: 1;
 }
 
-.btn {
+.modal-body .btn {
   border-radius: 0 !important;
 }
 
