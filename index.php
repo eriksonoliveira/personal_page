@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -8,7 +8,7 @@
   <!--  Custom CSS  -->
   <link rel="stylesheet" href="./assets/css/style.css" />
   <!--  Bootstrap V4.1.1  -->
-  <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css">
 
   <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,500,700" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet" />
@@ -37,7 +37,7 @@
   </header>
 
   <div id="body">
-    <section id="header">
+    <header id="header">
       <div class="header-inner">
         <div id="header-title-wrapper" class="align-middle">
           <div class="">
@@ -61,7 +61,7 @@
         </div>
       </div>
 
-    </section>
+    </header>
     <section id="about" class="padding-y">
       <div class="container">
         <h2 class="text-center">About Me</h2>
@@ -210,7 +210,7 @@
       </div>
     </section>
 
-    <section id="footer" class="text-white widget">
+    <footer id="footer" class="text-white widget">
       <div class="about-desc widget-desc proj-desc text-center">Erikson Oliveira - 2018</div>
 
       <div class="social-links">
@@ -226,12 +226,12 @@
           </li>
         </ul>
       </div>
-    </section>
+    </footer>
   </div>
 
   <!-- Modal -->
   <!--  Proj01  -->
-  <div class="modal fade" id="proj01Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="proj01Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -241,7 +241,7 @@
             </button>
         </div>
         <div class="modal-body">
-          <img class="img-fluid" src="./assets/img/proj-01.JPG" />
+          <img class="img-fluid" src="./assets/img/proj-01.JPG" alt="Proj 01"/>
           <div class="middle">
             <a href="https://eriksonoliveira.com/weather_database" target="_blank">
               <button class="btn btn-dark view-demo-btn">View Demo</button>
@@ -256,7 +256,7 @@
   </div>
 
   <!--  Proj02  -->
-  <div class="modal fade" id="proj02Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="proj02Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel2" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -266,7 +266,7 @@
             </button>
         </div>
         <div class="modal-body">
-          <img class="img-fluid" src="./assets/img/proj-02.JPG" />
+          <img class="img-fluid" src="./assets/img/proj-02.JPG" alt="Proj 02"/>
           <div class="middle">
             <a href="https://eriksonoliveira.com/weather_app" target="_blank">
               <button class="btn btn-dark view-demo-btn">View Demo</button>
@@ -281,17 +281,17 @@
   </div>
 
   <!--  Proj03  -->
-  <div class="modal fade" id="proj03Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="proj03Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel3" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="ModalLabel2">Reminder App</h5>
+          <h5 class="modal-title" id="ModalLabel3">Reminder App</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
         </div>
         <div class="modal-body">
-          <img class="img-fluid" src="./assets/img/proj-03.JPG" />
+          <img class="img-fluid" src="./assets/img/proj-03.JPG" alt="Proj 03"/>
           <div class="middle">
             <a href="https://eriksonoliveira.com/remind_me" target="_blank">
               <button class="btn btn-dark view-demo-btn">View Demo</button>
@@ -306,17 +306,17 @@
   </div>
 
   <!--  Proj04  -->
-  <div class="modal fade" id="proj04Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="proj04Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel4" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="ModalLabel3">Clock App</h5>
+          <h5 class="modal-title" id="ModalLabel4">Clock App</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
         </div>
         <div class="modal-body">
-          <img class="img-fluid" src="./assets/img/proj-04.JPG" />
+          <img class="img-fluid" src="./assets/img/proj-04.JPG" alt="Proj 04"/>
           <div class="middle">
             <a href="http://eriksonoliveira.com/Clock_app/" target="_blank">
               <button class="btn btn-dark view-demo-btn">View Demo</button>
@@ -331,17 +331,17 @@
   </div>
 
   <!--  Proj05  -->
-  <div class="modal fade" id="proj05Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="proj05Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel5" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="ModalLabel4">Weather Map</h5>
+          <h5 class="modal-title" id="ModalLabel5">Weather Map</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
         </div>
         <div class="modal-body">
-          <img class="img-fluid" src="./assets/img/proj-05.JPG" />
+          <img class="img-fluid" src="./assets/img/proj-05.JPG" alt="Proj 05"/>
           <div class="middle">
             <a href="https://eriksonoliveira.com/weather_map" target="_blank">
               <button class="btn btn-dark view-demo-btn">View Demo</button>
