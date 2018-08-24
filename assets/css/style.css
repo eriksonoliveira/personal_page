@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -6,7 +7,7 @@ html, body {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 .menu-height {
@@ -18,16 +19,14 @@ body {
   text-align: center;
   line-height: 70px;
   background-color: transparent;
-  position: absolute;
-  top: 0;
+  position: fixed;
   z-index: 100;
 }
 
 .menu.fix-menu {
-  position: fixed;
   background-color: #FFF;
   color: #222;
-  box-shadow: 0px 3px 10px 0px rgba(20,20,20,0.4);
+  box-shadow: 0px 3px 10px 0px rgba(20, 20, 20, 0.4);
 }
 
 .menu-logo {
@@ -107,9 +106,12 @@ body {
 
 #img-3:after {
   position: absolute;
-  top: 0; right: 0; bottom: 0; left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   content: ' ';
-  background-color: rgba(40,80,40,.4);
+  background-color: rgba(40, 80, 40, .4);
 }
 
 .header-inner {
@@ -181,7 +183,7 @@ body {
 }
 
 #projects {
-    min-height: 100vh;
+  min-height: 100vh;
   color: #FFF;
   border-top: 1px solid #111;
   border-bottom: 1px solid #111;
@@ -198,9 +200,12 @@ body {
 
 #projects::before {
   position: absolute;
-  top: 0; right: 0; bottom: 0; left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   content: ' ';
-  background-color: rgba(80,70,60,.5);
+  background-color: rgba(80, 70, 60, .5);
 }
 
 #projects-inner {
@@ -225,7 +230,7 @@ body {
 }
 
 .proj-img:hover .proj-img-wrap::before {
-  background: rgba(209 ,209 ,209 ,.3);
+  background: rgba(209, 209, 209, .3);
 }
 
 .proj-name {
@@ -241,8 +246,10 @@ body {
 
 .proj-img-wrap::before {
   position: absolute;
-  top: 0; right: 0;
-  left: 0; bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
   content: '';
   background: linear-gradient(359deg, rgba(7, 8, 8, .5) 0%, rgba(233, 235, 235, .2) 33%, rgba(209, 209, 209, .3) 50%, rgba(233, 235, 235, .2) 67%, rgba(8, 8, 8, .5) 99%);
   transition: background .2s;
@@ -285,9 +292,9 @@ body {
   max-width: 450px;
   padding: 50px 0;
   background-color: #FFF;
-  -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.4);
-  -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.4);
-  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.6);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.6);
 }
 
 #wrapper-cont-form.animate {
@@ -327,7 +334,8 @@ body {
   border: 2px solid #42dca3;
 }
 
-#name, #email {
+#name,
+#email {
   padding: 5px 0 5px 5px;
   height: 35px;
 }
@@ -498,20 +506,21 @@ body {
 
 @media only screen and (min-width: 769px) {
 
-.menu-nav ul li:hover a {
-  border-bottom: 1px solid #FFF;
-}
+  .menu-nav ul li:hover a {
+    border-bottom: 1px solid #FFF;
+  }
 
   .menu.fix-menu .menu-nav ul li:hover a {
-  border-bottom: 1px solid #222;
-}
+    border-bottom: 1px solid #222;
+  }
 
 }
 
 @media only screen and (max-width: 768px) {
 
-  html.active, body.active {
-/*    overflow-y: hidden;*/
+  html.active,
+  body.active {
+    /*    overflow-y: hidden;*/
   }
 
   .mobile-btn {
@@ -521,13 +530,14 @@ body {
     display: block;
     border-top: 4px solid;
     margin: 20px 20px 0 0;
-    position:;
+    position: ;
     float: right;
     cursor: pointer;
     -webkit-backface-visibility: hidden;
   }
 
-  .mobile-btn:after, .mobile-btn:before {
+  .mobile-btn:after,
+  .mobile-btn:before {
     content: '';
     height: 4px;
     margin-top: 6px;
@@ -565,7 +575,7 @@ body {
     visibility: hidden;
     transform: translate3d(70px, 0px, 0px);
     transition: all .2s ease-in-out;
-    box-shadow: -2px 0 5px 0 rgba(20,20,20,0.4);
+    box-shadow: -2px 0 5px 0 rgba(20, 20, 20, 0.4);
   }
 
   .menu-nav.mobile-menu.active {
@@ -584,7 +594,7 @@ body {
     border-bottom: 1px solid #42dca3;
   }
 
-  .menu-nav.mobile-menu li a{
+  .menu-nav.mobile-menu li a {
     height: 50px;
     width: 100%;
     line-height: 50px;
@@ -594,7 +604,7 @@ body {
     color: #222;
   }
 
-  .menu-nav.mobile-menu li a:hover{
+  .menu-nav.mobile-menu li a:hover {
     background-color: rgba(66, 220, 163, .3);
   }
 
@@ -610,11 +620,6 @@ body {
 
   #header {
     height: 400px;
-  }
-
-  #header-title-wrapper {
-    top: 100px;
-    padding: 0 45px;
   }
 
   #header-title {
@@ -633,7 +638,8 @@ body {
     height: 400px;
   }
 
-  .prev, .next {
+  .prev,
+  .next {
     padding: 16px;
   }
 
@@ -683,9 +689,9 @@ body {
   }
 
   #message {
-  max-width: 320px;
-  height: 180px;
-  max-height: 180px;
+    max-width: 320px;
+    height: 180px;
+    max-height: 180px;
   }
 
 }

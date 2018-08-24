@@ -2,8 +2,9 @@
 <html lang="en">
 
 <head>
+  <meta charset="utf-8">
   <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <meta name="description" content="I am Erikson Oliveira, a web developer and this is my personal web page.">
+  <meta name="description" content="I am Erikson Oliveira, a web developer who specializes in Front End development with javascript and this is my personal web page.">
 
   <!--  Custom CSS  -->
   <link rel="stylesheet" href="./assets/css/style.css" />
@@ -19,12 +20,12 @@
 </head>
 
 <body>
-  <header class="menu menu-height">
+  <nav class="menu menu-height">
     <span class="menu-logo menu-height">
-        <span class="logo">Erikson Oliveira</span>
+      <span class="logo">Erikson Oliveira</span>
     </span>
     <span class="mobile-btn"></span>
-    <nav class="menu-nav menu-height mobile-menu">
+    <div class="menu-nav menu-height mobile-menu">
       <ul>
         <li><a href="#header">Home</a></li>
         <li><a href="#about">About Me</a></li>
@@ -32,50 +33,58 @@
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-    </nav>
-  </header>
+    </div>
+</nav>
 
-  <div id="body">
+  <!-- <div id="body"> -->
     <main>
-      <section id="header">
-        <div class="header-inner">
-          <div id="header-title-wrapper" class="align-middle">
-            <div class="">
-              <img src="./assets/img/me.JPG" class="round-image mx-auto" alt="My picture"/>
+      <section>
+        <header id="header">
+          <div class="header-inner">
+            <div id="header-title-wrapper" class="align-middle">
+              <img src="./assets/img/me.JPG" class="round-image mx-auto" alt="Photo: Erikson Oliveira - Web developer" />
+              <div id="header-title">Erikson Oliveira</div>
+              <div id="header-subtitle">Hi, I'm a Web Developer who specializes<br> in Javascript development</div>
             </div>
-            <div id="header-title">Erikson Oliveira</div>
-            <div id="header-subtitle">Hi, I'm a junior Web Developer who specializes<br> in PHP and Javascript development</div>
           </div>
-        </div>
 
-        <div class="header-background">
-          <div id="img-3" class="header-img">
+          <div class="header-background">
+            <div id="img-3" class="header-img">
+            </div>
           </div>
-        </div>
 
-        <div class="header-scroll-trigger mb-3">
-          <div class="scroll-trigger btn">
-            <a href="#about">
+          <div class="header-scroll-trigger mb-3">
+            <div class="scroll-trigger btn">
+              <a href="#about">
                 <i class="fa fa-angle-double-down" aria-hidden="true"></i>
               </a>
+            </div>
           </div>
-        </div>
+        </header>
       </section>
 
       <section id="about" class="padding-y">
-        <div class="container">
+        <div class="about-container">
           <h2 class="text-center">About Me</h2>
           <div class="">
-            <img src="./assets/img/about_me.JPG" class="round-image mx-auto my-3" alt="About me"/>
+            <img src="./assets/img/about_me.JPG" class="round-image mx-auto my-3" alt="About me" />
           </div>
           <article>
-            <p>I'm a Full Stack developer who specializes in the development of web applications using PHP and Javascript languages.</p>
+            <p>
+              I'm a Full Stack developer who specializes in the development of web applications using PHP and Javascript languages.
+            </p>
 
-            <p>I started developing applications in 2016 while I was working as a meteorologist in Florianopolis, Brazil, and I realized that there were better ways to do the same work we were doing. I then decide to learn to code so I could build the tools that I had in my mind.</p>
+            <p>
+              I started developing applications in 2016 while I was working as a meteorologist in Florianopolis, Brazil, and I realized that there were better ways to do the same work we were doing. I then decide to learn to code so I could build the tools that I had in my mind.
+            </p>
 
-            <p>Since then I became passionate about building tools that are simple to use and help people complete their tasks in a faster and more efficient way.</p>
+            <p>
+              Since then I became passionate about building tools that are simple to use and help people complete their tasks in a faster and more efficient way.
+            </p>
 
-            <p>When I'm not learning or working on a project, I'm usually spending time with my wife, at the gym, or playing video games.</p>
+            <p>
+              When I'm not learning or working on a project, I'm usually spending time with my wife, at the gym, or playing video games.
+            </p>
           </article>
         </div>
       </section>
@@ -92,7 +101,9 @@
                 </div>
               </div>
               <article class="widget-desc proj-desc">
-                <p>This system was created to allow meteorologists at the weather office in the Santa Catarina State/Brazil to insert and manage data related to everyday weather events. The system was built with PHP, JS, MySQL, chart.js, and Bootstrap4.</p>
+                <p>
+                  This system was created to allow meteorologists at the weather office in the Santa Catarina State/Brazil to insert and manage data related to everyday weather events. The system was built with PHP, JS, MySQL, chart.js, and Bootstrap4.
+                </p>
               </article>
             </div>
             <div class="my-3 col-lg-4">
@@ -103,8 +114,10 @@
                 </div>
               </div>
               <article class="widget-desc proj-desc">
-                <p>An app that shows the user's local weather information by making AJAX calls to OpenWeatherMap's API. The user can see current weather conditions such as temperature, wind, and cloudiness, as well as, 3 days forecast.</p>
-                </article>
+                <p>
+                  An app that shows the user's local weather information by making AJAX calls to OpenWeatherMap's API. The user can see current weather conditions such as temperature, wind, and cloudiness, as well as, 3 days forecast.
+                </p>
+              </article>
             </div>
             <div class="my-3 col-lg-4">
               <div class="proj-img d-flex justify-content-center">
@@ -114,7 +127,9 @@
                 </div>
               </div>
               <article class="widget-desc proj-desc">
-                <p>A reminder app in which users can describe tasks and choose due dates and times. The app is written using the ReactJS framework and the Redux for state management.</p>
+                <p>
+                  A reminder app in which users can describe tasks and choose due dates and times. The app is written using the ReactJS framework and the Redux for state management.
+                </p>
               </article>
             </div>
           </div>
@@ -127,7 +142,9 @@
                 </div>
               </div>
               <article class="widget-desc proj-desc">
-                <p>A timer app built with ReactJS that includes a countdown to a specific date, that can be changed by the user, a timer with minutes and seconds and a stopwatch.</p>
+                <p>
+                  A timer app built with ReactJS that includes a countdown to a specific date, that can be changed by the user, a timer with minutes and seconds and a stopwatch.
+                </p>
               </article>
             </div>
             <div class="my-3 col-lg-4">
@@ -138,8 +155,11 @@
                 </div>
               </div>
               <article class="widget-desc proj-desc">
-                <p>This app was create to be used by the meteorologists at Epagri in their everyday weather forecast presentations in video.
-                  Temperature forecast data is received from an API and allows meteorologists to modify the values before they are inserted to the map using Google Maps Javascript API. The app contains 3 sections. The first shows satellite animation from Epagri/Ciram's website. The second is an iframe from windy.com. And the third is the map with the temperatures.</p></article>
+                <p>
+                  This app was create to be used by the meteorologists at Epagri in their everyday weather forecast presentations in video.
+                  Temperature forecast data is received from an API and allows meteorologists to modify the values before they are inserted to the map using Google Maps Javascript API. The app contains 3 sections. The first shows satellite animation from Epagri/Ciram's website. The second is an iframe from windy.com. And the third is the map with the temperatures.
+                </p>
+              </article>
             </div>
           </div>
         </div>
@@ -208,8 +228,8 @@
             </div>
             <input id="send-btn" class="btn" type="submit" value="SEND">
             <span class="spinner hide">
-                <i class="fas fa-spinner fa-spin"></i>
-              </span>
+              <i class="fas fa-spinner fa-spin"></i>
+            </span>
           </form>
         </div>
       </section>
@@ -232,7 +252,7 @@
         </ul>
       </div>
     </footer>
-  </div>
+  <!-- </div> -->
 
   <!-- Modal -->
   <!--  Proj01  -->
@@ -242,11 +262,11 @@
         <div class="modal-header">
           <h5 class="modal-title" id="ModalLabel1">Weather Database</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
         <div class="modal-body">
-          <img class="img-fluid" src="./assets/img/proj-01.JPG" alt="Proj 01"/>
+          <img class="img-fluid" src="./assets/img/proj-01.JPG" alt="Proj 01" />
           <div class="middle">
             <a href="https://eriksonoliveira.com/weather_database" target="_blank">
               <button class="btn btn-dark view-demo-btn">View Demo</button>
@@ -267,11 +287,11 @@
         <div class="modal-header">
           <h5 class="modal-title" id="ModalLabel2">Local Weather</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
         <div class="modal-body">
-          <img class="img-fluid" src="./assets/img/proj-02.JPG" alt="Proj 02"/>
+          <img class="img-fluid" src="./assets/img/proj-02.JPG" alt="Proj 02" />
           <div class="middle">
             <a href="https://eriksonoliveira.com/weather_app" target="_blank">
               <button class="btn btn-dark view-demo-btn">View Demo</button>
@@ -292,11 +312,11 @@
         <div class="modal-header">
           <h5 class="modal-title" id="ModalLabel3">Reminder App</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
         <div class="modal-body">
-          <img class="img-fluid" src="./assets/img/proj-03.JPG" alt="Proj 03"/>
+          <img class="img-fluid" src="./assets/img/proj-03.JPG" alt="Proj 03" />
           <div class="middle">
             <a href="https://eriksonoliveira.com/remind_me" target="_blank">
               <button class="btn btn-dark view-demo-btn">View Demo</button>
@@ -317,11 +337,11 @@
         <div class="modal-header">
           <h5 class="modal-title" id="ModalLabel4">Clock App</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
         <div class="modal-body">
-          <img class="img-fluid" src="./assets/img/proj-04.JPG" alt="Proj 04"/>
+          <img class="img-fluid" src="./assets/img/proj-04.JPG" alt="Proj 04" />
           <div class="middle">
             <a href="http://eriksonoliveira.com/Clock_app/" target="_blank">
               <button class="btn btn-dark view-demo-btn">View Demo</button>
@@ -342,11 +362,11 @@
         <div class="modal-header">
           <h5 class="modal-title" id="ModalLabel5">Weather Map</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
         <div class="modal-body">
-          <img class="img-fluid" src="./assets/img/proj-05.JPG" alt="Proj 05"/>
+          <img class="img-fluid" src="./assets/img/proj-05.JPG" alt="Proj 05" />
           <div class="middle">
             <a href="https://eriksonoliveira.com/weather_map" target="_blank">
               <button class="btn btn-dark view-demo-btn">View Demo</button>
