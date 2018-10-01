@@ -11,6 +11,21 @@ body {
   overflow-x: hidden;
 }
 
+.padding-y {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.animate {
+  opacity: 0;
+  transition: 1.5s;
+}
+
+.widget {
+  width: 100%;
+  padding: 100px 0;
+}
+
 .menu-height {
   height: 70px;
 }
@@ -68,16 +83,6 @@ body {
 
 .menu-nav ul li a.fix-menu {
   color: #222;
-}
-
-.animate {
-  opacity: 0;
-  transition: 1.5s;
-}
-
-.widget {
-  width: 100%;
-  padding: 100px 0;
 }
 
 #header {
@@ -219,9 +224,14 @@ body {
 
 #projects-inner {
   max-width: 1350px;
-  margin: 60px auto;
+  margin-left: auto;
+  margin-right: auto;
   display: block;
   position: relative;
+}
+
+.projects-title {
+  font-size:
 }
 
 .proj-row {
@@ -246,19 +256,18 @@ body {
   bottom: 0;
   content: '';
   background: rgba(40, 40, 40, .5);
-  transition: background 0.6s;
+  transition: background 0.1s;
 }
 
 .proj-img:hover .proj-img-wrap::before {
-  border: 3px solid #CCC;
   background: transparent;
 }
 
 .proj-name {
   position: absolute;
   display: inline;
-  font-size: 2rem;
-  text-shadow: 2px 2px 4px #222;
+  font-size: 1.7rem;
+  text-shadow: 2px 2px 3px #151515;
 }
 
 .proj-img img {
@@ -272,22 +281,21 @@ body {
   width: 333px;
 }
 
-.skills-subheader {
-  font-size: 1.25rem;
+.subheader-font-weight {
+  font-weight: 300;
 }
 
-.list-icons {
+.skills-item-icon {
   font-size: 4.5rem;
   color: #222;
 }
 
-.list-inline-item:hover {
+.skills-item-icon:hover {
   color: #42dca3;
 }
 
-.padding-y {
-  padding-top: 120px;
-  padding-bottom: 120px;
+skills-item-label {
+
 }
 
 #contact {
@@ -354,7 +362,7 @@ body {
 
 #send-btn {
   background-color: inherit;
-  transition: .2s ease;
+  transition: .1s ease;
   border-radius: 0;
   cursor: pointer;
 }

@@ -83,9 +83,9 @@
       </article>
     </section>
 
-    <section id="projects" class="animate">
+    <section id="projects" class="animate padding-y">
       <div id="projects-inner">
-        <h2 id="proj-header" class="text-center">See some of my projects</h2>
+        <h2 class="projects-title text-center mb-4">See some of my projects</h2>
         <div class="row" style="margin: auto;">
           <div class="my-3 col-lg-4">
             <div class="proj-img d-flex justify-content-center">
@@ -154,57 +154,73 @@
               </p>
             </article>
           </div>
+          <div class="my-3 col-lg-4">
+            <div class="proj-img d-flex justify-content-center">
+              <div class="proj-img-wrap d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#proj05Modal">
+                <span class="proj-name">Lyrics Finder</span>
+                <img class="img-responsive" src="./assets/img/proj-05.JPG" alt="Project Weather Map" />
+              </div>
+            </div>
+            <article class="widget-desc proj-desc">
+              <p>
+                This app was create to be used by the meteorologists at Epagri in their everyday weather forecast presentations in video.
+              </p>
+            </article>
+          </div>
         </div>
       </div>
     </section>
 
     <section id="skills" class="padding-y">
       <div class="container">
-        <h2 class="skills-header text-center">Skills</h2>
+        <h2 class="skills-header mb-4 text-center">Skills</h2>
         <div>
-          <div class="skills-subheader mb-3 text-center">Programming Languages &amp; Tools</div>
-          <ul class="list-inline list-icons text-center">
-            <li class="list-inline-item">
-              <i class="devicons devicons-html5"></i>
+          <h5 class="skills-subheader subheader-font-weight mb-3 text-center">Programming Languages &amp; Tools I Use</h5>
+          <ul class="list-inline text-center">
+            <li class="skills-item list-inline-item">
+              <i class="skills-item-icon devicons devicons-html5"></i>
+              <p class="skills-item-label">HTML5</p>
             </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-css3"></i>
+            <li class="skills-item list-inline-item">
+              <i class="skills-item-icon devicons devicons-css3"></i>
+              <p class="skills-item-label">CSS3</p>
             </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-javascript"></i>
+            <li class="skills-item list-inline-item">
+              <i class="skills-item-icon devicons devicons-javascript"></i>
+              <p class="skills-item-label">Javascript</p>
             </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-php"></i>
+            <li class="skills-item list-inline-item">
+              <i class="skills-item-icon devicons devicons-react"></i>
+              <p class="skills-item-label">ReactJS</p>
             </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-bootstrap"></i>
+            <li class="skills-item list-inline-item">
+              <i class="skills-item-icon devicons devicons-jquery"></i>
+              <p class="skills-item-label">JQuery</p>
             </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-jquery"></i>
+            <li class="skills-item list-inline-item">
+              <i class="skills-item-icon devicons devicons-php"></i>
+              <p class="skills-item-label">PHP</p>
             </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-react"></i>
+            <li class="skills-item list-inline-item">
+              <i class="skills-item-icon devicons devicons-bootstrap"></i>
+              <p class="skills-item-label">Bootstrap</p>
             </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-mysql"></i>
+            <li class="skills-item list-inline-item">
+              <i class="skills-item-icon devicons devicons-git"></i>
+              <p class="skills-item-label">Git</p>
             </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-git"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-npm"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-brackets"></i>
+            <li class="skills-item list-inline-item">
+              <i class="skills-item-icon devicons devicons-npm"></i>
+              <p class="skills-item-label">npm</p>
             </li>
           </ul>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="widget ">
+    <section id="contact" class="widget">
       <h2 id="cont-header" class="text-center">Contact Me</h2>
-      <h5 class="text-center">I'd love to hear from you</h5>
+      <h5 class="cont-subheader subheader-font-weight text-center">I'd love to hear from you</h5>
       <div id="wrapper-cont-form" class="animate container mt-5">
         <form id="cont-form" method="POST">
           <div class="form-group">
