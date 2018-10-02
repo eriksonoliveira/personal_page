@@ -61,8 +61,11 @@
     </section>
 
     <section id="about" class="padding-y">
-      <h2 class="text-center">About Me</h2>
-      <img src="./assets/img/about_me.JPG" class="round-image mx-auto my-5" alt="About me" />
+      <h2 class="about-header text-center">About Me</h2>
+      <div class="about-image-container mx-auto">
+        <img src="./assets/img/about_me02.JPG" class="about-image round-image mx-auto my-5" alt="About me" />
+        <div class="about-image-effect"></div>
+      </div>
       <article class="about-text">
         <p>
           I'm a Full Stack developer who specializes in the development of web applications using PHP and Javascript languages.
@@ -380,7 +383,7 @@
       </div>
     </div>
   </div>
-
+  <!--  Proj06  -->
   <div class="modal fade" id="proj06Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel5" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
       <div class="modal-content">
@@ -391,7 +394,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <img class="img-fluid" src="./assets/img/proj-06-3.JPG" alt="Proj 06" />
+          <img class="img-fluid" src="./assets/img/proj-06-3.jpg" alt="Proj 06" />
           <div class="middle">
             <a href="http://lyrics-finder-eriksonoliveira.herokuapp.com/" target="_blank">
               <button class="btn btn-dark view-demo-btn">View Demo</button>
