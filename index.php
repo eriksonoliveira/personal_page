@@ -48,15 +48,14 @@
       </header>
 
       <div class="header-background">
-        <div class="header-img">
-        </div>
+        <div class="header-img"></div>
       </div>
 
       <div class="header-scroll-trigger mb-3">
         <div class="scroll-trigger btn">
           <a href="#about">
-                <i class="fa fa-angle-double-down" aria-hidden="true"></i>
-              </a>
+            <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+          </a>
         </div>
       </div>
     </section>
@@ -84,88 +83,56 @@
     </section>
 
     <section id="projects" class="animate padding-y">
-      <div id="projects-inner">
+      <div class="projects-container">
         <h2 class="projects-title text-center mb-4">See some of my projects</h2>
-        <div class="row" style="margin: auto;">
-          <div class="my-3 col-lg-4">
+        <div class="d-flex flex-wrap mx-auto">
+          <div class="my-3 col-lg-4 col-md-6">
             <div class="proj-img d-flex justify-content-center">
               <div class="proj-img-wrap d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#proj01Modal">
                 <span class="proj-name">Weather Database</span>
                 <img class="img-responsive" src="./assets/img/proj-01.JPG" alt="Project Weather Database" />
               </div>
             </div>
-            <article class="widget-desc proj-desc">
-              <p>
-                This system was created to allow meteorologists at the weather office in the Santa Catarina State/Brazil to insert and manage data related to everyday weather events. The system was built with PHP, JS, MySQL, chart.js, and Bootstrap4.
-              </p>
-            </article>
           </div>
-          <div class="my-3 col-lg-4">
+          <div class="my-3 col-lg-4 col-md-6">
             <div class="proj-img d-flex justify-content-center">
               <div class="proj-img-wrap d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#proj02Modal">
                 <span class="proj-name">Local Weather</span>
                 <img class="img-responsive" src="./assets/img/proj-02.JPG" alt="Project Weather App" />
               </div>
             </div>
-            <article class="widget-desc proj-desc">
-              <p>
-                An app that shows the user's local weather information by making AJAX calls to OpenWeatherMap's API. The user can see current weather conditions such as temperature, wind, and cloudiness, as well as, 3 days forecast.
-              </p>
-            </article>
           </div>
-          <div class="my-3 col-lg-4">
+          <div class="my-3 col-lg-4 col-md-6">
             <div class="proj-img d-flex justify-content-center">
               <div class="proj-img-wrap d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#proj03Modal">
                 <span class="proj-name">Reminder App</span>
                 <img class="img-responsive" src="./assets/img/proj-03.JPG" alt="Project Reminder App" />
               </div>
             </div>
-            <article class="widget-desc proj-desc">
-              <p>
-                A reminder app in which users can describe tasks and choose due dates and times. The app is written using the ReactJS framework and the Redux for state management.
-              </p>
-            </article>
           </div>
-        </div>
-        <div class="row justify-content-center" style="margin: auto;">
-          <div class="my-3 col-lg-4">
+          <div class="my-3 col-lg-4 col-md-6">
             <div class="proj-img d-flex justify-content-center">
               <div class="proj-img-wrap d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#proj04Modal">
                 <span class="proj-name">Clock App</span>
                 <img class="img-responsive" src="./assets/img/proj-04.JPG" alt="Project Clock App" />
               </div>
             </div>
-            <article class="widget-desc proj-desc">
-              <p>
-                A timer app built with ReactJS that includes a countdown to a specific date, that can be changed by the user, a timer with minutes and seconds and a stopwatch.
-              </p>
-            </article>
           </div>
-          <div class="my-3 col-lg-4">
+          <div class="my-3 col-lg-4 col-md-6">
             <div class="proj-img d-flex justify-content-center">
               <div class="proj-img-wrap d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#proj05Modal">
                 <span class="proj-name">Weather Map</span>
                 <img class="img-responsive" src="./assets/img/proj-05.JPG" alt="Project Weather Map" />
               </div>
             </div>
-            <article class="widget-desc proj-desc">
-              <p>
-                This app was create to be used by the meteorologists at Epagri in their everyday weather forecast presentations in video. Temperature forecast data is received from an API and allows meteorologists to modify the values before they are inserted to the map using Google Maps Javascript API. The app contains 3 sections. The first shows satellite animation from Epagri/Ciram's website. The second is an iframe from windy.com. And the third is the map with the temperatures.
-              </p>
-            </article>
           </div>
-          <div class="my-3 col-lg-4">
+          <div class="my-3 col-lg-4 col-md-6">
             <div class="proj-img d-flex justify-content-center">
-              <div class="proj-img-wrap d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#proj05Modal">
-                <span class="proj-name">Lyrics Finder</span>
-                <img class="img-responsive" src="./assets/img/proj-05.JPG" alt="Project Weather Map" />
+              <div class="proj-img-wrap d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#proj06Modal">
+                <span class="proj-name">Lyrics Finder App</span>
+                <img class="img-responsive" src="./assets/img/proj-06-3.JPG" alt="Project Lyrics Finder App" />
               </div>
             </div>
-            <article class="widget-desc proj-desc">
-              <p>
-                This app was create to be used by the meteorologists at Epagri in their everyday weather forecast presentations in video.
-              </p>
-            </article>
           </div>
         </div>
       </div>
@@ -237,26 +204,26 @@
           </div>
           <input id="send-btn" class="btn" type="submit" value="SEND">
           <span class="spinner hide">
-              <i class="fas fa-spinner fa-spin"></i>
-            </span>
+            <i class="fas fa-spinner fa-spin"></i>
+          </span>
         </form>
       </div>
     </section>
   </main>
 
   <footer id="footer" class="text-white widget">
-    <div class="about-desc widget-desc proj-desc text-center">Erikson Oliveira - 2018</div>
+    <div class="text-center">Erikson Oliveira - 2018</div>
 
     <div class="social-links">
       <ul id="links-1">
         <li class="facebook"><a class="circle-icon" href="https://www.facebook.com/erikson.magno" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
         <li class="linkedin">
           <a class="circle-icon" href="https://www.linkedin.com/in/erikson-de-oliveira-8b428977/" target="_blank"><i class="fab fa-linkedin-in" aria-hidden="true"></i>
-            </a>
+          </a>
         </li>
         <li class="github">
           <a class="circle-icon" href="https://github.com/eriksonoliveira" target="_blank"><i class="fab fa-github" aria-hidden="true"></i>
-            </a>
+          </a>
         </li>
       </ul>
     </div>
@@ -281,6 +248,11 @@
               <button class="btn btn-dark view-demo-btn">View Demo</button>
             </a>
           </div>
+          <article class="proj-desc">
+            <p>
+              This system was created to allow meteorologists at the weather office in the Santa Catarina State/Brazil to insert and manage data related to everyday weather events. The system was built with PHP, JS, MySQL, chart.js, and Bootstrap4.
+            </p>
+          </article>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -306,6 +278,11 @@
               <button class="btn btn-dark view-demo-btn">View Demo</button>
             </a>
           </div>
+          <article class="proj-desc">
+            <p>
+              An app that shows the user's local weather information by making AJAX calls to OpenWeatherMap's API. The user can see current weather conditions such as temperature, wind, and cloudiness, as well as, 3 days forecast.
+            </p>
+          </article>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -331,6 +308,11 @@
               <button class="btn btn-dark view-demo-btn">View Demo</button>
             </a>
           </div>
+          <article class="proj-desc">
+            <p>
+              A reminder app in which users can describe tasks and choose due dates and times. The app is written using the ReactJS framework and the Redux for state management.
+            </p>
+          </article>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -356,6 +338,11 @@
               <button class="btn btn-dark view-demo-btn">View Demo</button>
             </a>
           </div>
+          <article class="proj-desc">
+            <p>
+              A timer app built with ReactJS that includes a countdown to a specific date, that can be changed by the user, a timer with minutes and seconds and a stopwatch.
+            </p>
+          </article>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -381,6 +368,40 @@
               <button class="btn btn-dark view-demo-btn">View Demo</button>
             </a>
           </div>
+          <article class="proj-desc">
+            <p>
+              This app was created to be used by the meteorologists at Epagri in their everyday weather forecast presentations in video. Temperature forecast data is received from an API and allows meteorologists to modify the values before they are inserted to the map using Google Maps Javascript API. The app contains 3 sections. The first shows satellite animation from Epagri/Ciram's website. The second is an iframe from windy.com. And the third is the map with the temperatures.
+            </p>
+          </article>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="proj06Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel5" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ModalLabel6">Lyrics Finder App</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img class="img-fluid" src="./assets/img/proj-06-3.JPG" alt="Proj 06" />
+          <div class="middle">
+            <a href="http://lyrics-finder-eriksonoliveira.herokuapp.com/" target="_blank">
+              <button class="btn btn-dark view-demo-btn">View Demo</button>
+            </a>
+          </div>
+          <article class="proj-desc">
+            <p>
+              A ReactJS app where users can search for lyrics. If the song can be found in the Spotify database, the user can also play the song while reads the lyrics.
+            </p>
+          </article>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
