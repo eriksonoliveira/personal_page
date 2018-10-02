@@ -7,7 +7,7 @@
   <meta name="description" content="I am Erikson Oliveira, a web developer who specializes in Front End development with javascript and this is my personal web page.">
 
   <!--  Custom CSS  -->
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./src/css/style.css" />
   <!--  Bootstrap V4.1.1  -->
   <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css">
 
@@ -41,7 +41,7 @@
     <section id="header">
       <header class="header">
         <div class="header-title-wrapper" class="align-middle">
-          <img src="./assets/img/me.JPG" class="round-image mx-auto" alt="Photo: Erikson Oliveira - Web developer" />
+          <img src="./src/img/me.JPG" class="round-image mx-auto" alt="Photo: Erikson Oliveira - Web developer" />
           <div class="header-title">Erikson Oliveira</div>
           <div class="header-subtitle font-weight-300">Hi, I'm a Web Developer who specializes<br> in Javascript development</div>
         </div>
@@ -63,7 +63,7 @@
     <section id="about" class="padding-y">
       <h2 class="about-header text-center">About Me</h2>
       <div class="about-image-container mx-auto">
-        <img src="./assets/img/about_me02.JPG" class="about-image round-image mx-auto my-5" alt="About me" />
+        <img src="./src/img/about_me02.JPG" class="about-image round-image mx-auto my-5" alt="About me" />
         <div class="about-image-effect"></div>
       </div>
       <article class="about-text font-weight-300">
@@ -93,7 +93,7 @@
             <div class="proj-img d-flex justify-content-center">
               <div class="proj-img-wrap d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#proj01Modal">
                 <span class="proj-name">Weather Database</span>
-                <img class="img-responsive" src="./assets/img/proj-01.JPG" alt="Project Weather Database" />
+                <img class="img-responsive" src="./src/img/proj-01.JPG" alt="Project Weather Database" />
               </div>
             </div>
           </div>
@@ -101,7 +101,7 @@
             <div class="proj-img d-flex justify-content-center">
               <div class="proj-img-wrap d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#proj02Modal">
                 <span class="proj-name">Local Weather</span>
-                <img class="img-responsive" src="./assets/img/proj-02.JPG" alt="Project Weather App" />
+                <img class="img-responsive" src="./src/img/proj-02.JPG" alt="Project Weather App" />
               </div>
             </div>
           </div>
@@ -109,7 +109,7 @@
             <div class="proj-img d-flex justify-content-center">
               <div class="proj-img-wrap d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#proj03Modal">
                 <span class="proj-name">Reminder App</span>
-                <img class="img-responsive" src="./assets/img/proj-03.JPG" alt="Project Reminder App" />
+                <img class="img-responsive" src="./src/img/proj-03.JPG" alt="Project Reminder App" />
               </div>
             </div>
           </div>
@@ -117,7 +117,7 @@
             <div class="proj-img d-flex justify-content-center">
               <div class="proj-img-wrap d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#proj04Modal">
                 <span class="proj-name">Clock App</span>
-                <img class="img-responsive" src="./assets/img/proj-04.JPG" alt="Project Clock App" />
+                <img class="img-responsive" src="./src/img/proj-04.JPG" alt="Project Clock App" />
               </div>
             </div>
           </div>
@@ -125,7 +125,7 @@
             <div class="proj-img d-flex justify-content-center">
               <div class="proj-img-wrap d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#proj05Modal">
                 <span class="proj-name">Weather Map</span>
-                <img class="img-responsive" src="./assets/img/proj-05.JPG" alt="Project Weather Map" />
+                <img class="img-responsive" src="./src/img/proj-05.JPG" alt="Project Weather Map" />
               </div>
             </div>
           </div>
@@ -133,7 +133,7 @@
             <div class="proj-img d-flex justify-content-center">
               <div class="proj-img-wrap d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#proj06Modal">
                 <span class="proj-name">Lyrics Finder App</span>
-                <img class="img-responsive" src="./assets/img/proj-06-3.JPG" alt="Project Lyrics Finder App" />
+                <img class="img-responsive" src="./src/img/proj-06-3.JPG" alt="Project Lyrics Finder App" />
               </div>
             </div>
           </div>
@@ -278,7 +278,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <div class="proj-modal-img" style="background-image: url(./assets/img/proj-02.jpg)"></div>
+          <div class="proj-modal-img" style="background-image: url(./src/img/proj-02.jpg)"></div>
           <h5 class="modal-title text-center mt-4" id="ModalLabel2">Local Weather App</h5>
           <div class="proj-desc">
             <article class="proj-desc-text font-weight-300 d-md-inline-block">
@@ -312,7 +312,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <div class="proj-modal-img" style="background-image: url(./assets/img/proj-03.jpg)"></div>
+          <div class="proj-modal-img" style="background-image: url(./src/img/proj-03.jpg)"></div>
           <h5 class="modal-title text-center mt-4" id="ModalLabel3">Reminder App</h5>
           <div class="proj-desc">
             <article class="proj-desc-text font-weight-300 d-md-inline-block">
@@ -346,7 +346,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <div class="proj-modal-img" style="background-image: url(./assets/img/proj-04.jpg)"></div>
+          <div class="proj-modal-img" style="background-image: url(./src/img/proj-04.jpg)"></div>
           <h5 class="modal-title text-center mt-4" id="ModalLabel3">Clock App</h5>
           <div class="proj-desc">
             <article class="proj-desc-text font-weight-300 d-md-inline-block">
@@ -380,7 +380,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <div class="proj-modal-img" style="background-image: url(./assets/img/proj-05.jpg)"></div>
+          <div class="proj-modal-img" style="background-image: url(./src/img/proj-05.jpg)"></div>
           <h5 class="modal-title text-center mt-4" id="ModalLabel3">Weather Map</h5>
           <div class="proj-desc">
             <article class="proj-desc-text font-weight-300 d-md-inline-block">
@@ -414,7 +414,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <div class="proj-modal-img" style="background-image: url(./assets/img/proj-06-3.jpg)"></div>
+          <div class="proj-modal-img" style="background-image: url(./src/img/proj-06-3.jpg)"></div>
           <h5 class="modal-title text-center mt-4" id="ModalLabel3">Lyrics Finder App</h5>
           <div class="proj-desc">
             <article class="proj-desc-text font-weight-300 d-md-inline-block">
@@ -459,7 +459,7 @@
   <!--  Bootstrap JS  -->
   <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
   <!--  Custom JS  -->
-  <script src="./assets/js/script.js"></script>
+  <script src="./src/js/script.js"></script>
 </body>
 
 </html>
