@@ -63,7 +63,7 @@
     <section id="about" class="padding-y">
       <h2 class="about-header text-center">About Me</h2>
       <div class="about-image-container mx-auto">
-        <img src="./src/img/about_me02.JPG" class="about-image round-image mx-auto my-5" alt="About me" />
+        <img src="./src/img/about_me02.jpg" class="about-image round-image mx-auto my-5" alt="About me" />
         <div class="about-image-effect"></div>
       </div>
       <article class="about-text font-weight-300">
@@ -93,7 +93,7 @@
             <div class="proj-img d-flex justify-content-center">
               <div class="proj-img-wrap d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#proj01Modal">
                 <span class="proj-name">Weather Database</span>
-                <img class="img-responsive" src="./src/img/proj-01.JPG" alt="Project Weather Database" />
+                <img class="img-responsive" src="./src/img/proj-01.jpg" alt="Project Weather Database" />
               </div>
             </div>
           </div>
@@ -101,7 +101,7 @@
             <div class="proj-img d-flex justify-content-center">
               <div class="proj-img-wrap d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#proj02Modal">
                 <span class="proj-name">Local Weather</span>
-                <img class="img-responsive" src="./src/img/proj-02.JPG" alt="Project Weather App" />
+                <img class="img-responsive" src="./src/img/proj-02.jpg" alt="Project Weather App" />
               </div>
             </div>
           </div>
@@ -109,7 +109,7 @@
             <div class="proj-img d-flex justify-content-center">
               <div class="proj-img-wrap d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#proj03Modal">
                 <span class="proj-name">Reminder App</span>
-                <img class="img-responsive" src="./src/img/proj-03.JPG" alt="Project Reminder App" />
+                <img class="img-responsive" src="./src/img/proj-03.jpg" alt="Project Reminder App" />
               </div>
             </div>
           </div>
@@ -117,7 +117,7 @@
             <div class="proj-img d-flex justify-content-center">
               <div class="proj-img-wrap d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#proj04Modal">
                 <span class="proj-name">Clock App</span>
-                <img class="img-responsive" src="./src/img/proj-04.JPG" alt="Project Clock App" />
+                <img class="img-responsive" src="./src/img/proj-04.jpg" alt="Project Clock App" />
               </div>
             </div>
           </div>
@@ -125,7 +125,7 @@
             <div class="proj-img d-flex justify-content-center">
               <div class="proj-img-wrap d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#proj05Modal">
                 <span class="proj-name">Weather Map</span>
-                <img class="img-responsive" src="./src/img/proj-05.JPG" alt="Project Weather Map" />
+                <img class="img-responsive" src="./src/img/proj-05.jpg" alt="Project Weather Map" />
               </div>
             </div>
           </div>
@@ -133,7 +133,7 @@
             <div class="proj-img d-flex justify-content-center">
               <div class="proj-img-wrap d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#proj06Modal">
                 <span class="proj-name">Lyrics Finder App</span>
-                <img class="img-responsive" src="./src/img/proj-06-3.JPG" alt="Project Lyrics Finder App" />
+                <img class="img-responsive" src="./src/img/proj-06-3.jpg" alt="Project Lyrics Finder App" />
               </div>
             </div>
           </div>
@@ -262,7 +262,7 @@
         </div>
         <div class="modal-footer">
           <a class="proj-modal-view-demo" href="https://eriksonoliveira.com/weather_database" target="_blank">View Demo
-            </a>
+          </a>
         </div>
       </div>
     </div>
@@ -296,14 +296,14 @@
         </div>
         <div class="modal-footer">
           <a class="proj-modal-view-demo" href="https://eriksonoliveira.com/weather_app" target="_blank">View Demo
-            </a>
+          </a>
         </div>
       </div>
     </div>
   </div>
 
   <!--  Proj03  -->
-    <div class="modal fade" id="proj03Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel3" aria-hidden="true">
+  <div class="modal fade" id="proj03Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel3" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
       <div class="modal-content" style="border-radius: 0">
         <div class="modal-header">
@@ -330,7 +330,7 @@
         </div>
         <div class="modal-footer">
           <a class="proj-modal-view-demo" href="https://eriksonoliveira.com/remind_me" target="_blank">View Demo
-            </a>
+          </a>
         </div>
       </div>
     </div>
@@ -364,14 +364,14 @@
         </div>
         <div class="modal-footer">
           <a class="proj-modal-view-demo" href="https://eriksonoliveira.com/Clock_app" target="_blank">View Demo
-            </a>
+          </a>
         </div>
       </div>
     </div>
   </div>
 
   <!--  Proj05  -->
-   <div class="modal fade" id="proj05Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel5" aria-hidden="true">
+  <div class="modal fade" id="proj05Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel5" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
       <div class="modal-content" style="border-radius: 0">
         <div class="modal-header">
@@ -398,7 +398,7 @@
         </div>
         <div class="modal-footer">
           <a class="proj-modal-view-demo" href="https://eriksonoliveira.com/weather_map" target="_blank">View Demo
-            </a>
+          </a>
         </div>
       </div>
     </div>
@@ -424,15 +424,16 @@
             </article>
             <div class="proj-skills d-md-inline-block text-center">
               <ul class="d-inline-block m-0 p-0">
-                <li class="proj-skills-item d-inline-block">JQuery</li>
-                <li class="proj-skills-item d-inline-block">Google Maps API</li>
+                <li class="proj-skills-item d-inline-block">ReactJS</li>
+                <li class="proj-skills-item d-inline-block">React Router</li>
+                <li class="proj-skills-item d-inline-block">Spotify API</li>
               </ul>
             </div>
           </div>
         </div>
         <div class="modal-footer">
           <a class="proj-modal-view-demo" href="http://lyrics-finder-eriksonoliveira.herokuapp.com/" target="_blank">View Demo
-            </a>
+          </a>
         </div>
       </div>
     </div>
