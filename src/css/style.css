@@ -187,6 +187,11 @@ body {
 
 .scroll-trigger .fa-angle-double-down {
   font-size: 2rem;
+  transition: transform 0.2s;
+}
+
+.scroll-trigger:hover .fa-angle-double-down {
+  transform: translateY(3px);
 }
 
 .about-image-container {
@@ -533,23 +538,39 @@ body {
 }
 
 @media only screen and (min-width: 769px) {
-
-  .menu-nav ul li:hover a {
-    border-bottom: 1px solid #FFF;
+ 
+  .menu-nav ul li a {
+    position: relative;
   }
 
-  .menu.fix-menu .menu-nav ul li:hover a {
-    border-bottom: 1px solid #222;
+  .menu-nav ul li a:before {
+    content: '';
+    height: 1px;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #FFF;
+    transition: width 0.2s;
+  }
+
+  .menu-nav ul li a:hover:before {
+    width: 100%;
+  }
+
+  .menu.fix-menu .menu-nav ul li a:before {
+    background-color: #222;
   }
 
 }
 
 @media only screen and (max-width: 768px) {
 
-  html.active,
+  /* html.active,
   body.active {
-    /*    overflow-y: hidden;*/
-  }
+       overflow-y: hidden;
+  } */
 
   .mobile-btn {
     width: 36px;
@@ -558,7 +579,6 @@ body {
     display: block;
     border-top: 4px solid;
     margin: 20px 20px 0 0;
-    position: ;
     float: right;
     cursor: pointer;
     -webkit-backface-visibility: hidden;
