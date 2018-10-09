@@ -1,5 +1,5 @@
 //animate to the target section on click
-$("nav a, .scroll-trigger a").click(function (e) {
+$("nav a, .scroll-trigger").click(function (e) {
   e.preventDefault();
 
   var id = $(this).attr("href"),
