@@ -8,6 +8,10 @@
 
   <!--  Custom CSS  -->
   <link rel="stylesheet" href="./src/css/style.css" />
+
+  <!-- inject:css -->
+  <!-- endinject -->
+
   <!--  Bootstrap V4.1.1  -->
   <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css">
 
@@ -36,12 +40,11 @@
     </div>
   </nav>
 
-  <!-- <div id="body"> -->
   <main>
     <section id="header">
       <header class="header">
         <div class="header-title-wrapper" class="align-middle">
-          <img src="./src/img/me.JPG" class="round-image mx-auto" alt="Photo: Erikson Oliveira - Web developer" />
+          <img src="./src/img/me.jpg" class="round-image mx-auto" alt="Photo: Erikson Oliveira - Web developer" />
           <div class="header-title">Erikson Oliveira</div>
           <div class="header-subtitle font-weight-300">Hi, I'm a Web Developer who specializes<br> in Javascript development</div>
         </div>
@@ -52,11 +55,9 @@
       </div>
 
       <div class="header-scroll-trigger mb-3">
-        <div class="scroll-trigger btn">
-          <a href="#about">
-            <i class="fa fa-angle-double-down" aria-hidden="true"></i>
-          </a>
-        </div>
+        <a class="scroll-trigger" href="#about">
+          <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+        </a>
       </div>
     </section>
 
@@ -182,6 +183,10 @@
             <li class="skills-item list-inline-item">
               <i class="skills-item-icon devicons devicons-npm"></i>
               <p class="skills-item-label">npm</p>
+            </li>
+            <li class="skills-item list-inline-item">
+              <i class="skills-item-icon devicons devicons-gulp"></i>
+              <p class="skills-item-label">Gulp</p>
             </li>
           </ul>
         </div>
@@ -390,7 +395,7 @@
             </article>
             <div class="proj-skills d-md-inline-block text-center">
               <ul class="d-inline-block m-0 p-0">
-                <li class="proj-skills-item d-inline-block">JQuery</li>
+                <li class="proj-skills-item d-inline-block">Javascript</li>
                 <li class="proj-skills-item d-inline-block">Google Maps API</li>
               </ul>
             </div>
