@@ -31,7 +31,7 @@
     <span class="mobile-btn"></span>
     <div class="menu-nav menu-height mobile-menu">
       <ul>
-        <li><a href="#header">Home</a></li>
+        <li><a class="home-link" href="#header">Home</a></li>
         <li><a href="#about">About Me</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
