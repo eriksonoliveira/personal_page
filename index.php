@@ -8,6 +8,7 @@
 
   <!--  Custom CSS  -->
   <link rel="stylesheet" href="./src/css/style.css" />
+  <link rel="stylesheet" href="./src/css/grid.css"/>
 
   <!-- inject:css -->
   <!-- endinject -->
@@ -89,8 +90,8 @@
     <section id="projects" class="animate padding-y">
       <div class="projects-container">
         <h2 class="projects-title text-center mb-4">See some of my projects</h2>
-        <div class="d-flex flex-wrap mx-auto">
-          <div class="my-3 col-lg-4 col-md-6">
+        <div class="text-center mx-auto">
+          <div class="my-3 column-lg-4 column-md-6">
             <div class="proj-img d-flex justify-content-center">
               <div class="proj-img-wrap d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#proj01Modal">
                 <span class="proj-name">Weather Database</span>
@@ -98,7 +99,7 @@
               </div>
             </div>
           </div>
-          <div class="my-3 col-lg-4 col-md-6">
+          <div class="my-3 column-lg-4 column-md-6">
             <div class="proj-img d-flex justify-content-center">
               <div class="proj-img-wrap d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#proj02Modal">
                 <span class="proj-name">Local Weather</span>
@@ -106,7 +107,7 @@
               </div>
             </div>
           </div>
-          <div class="my-3 col-lg-4 col-md-6">
+          <div class="my-3 column-lg-4 column-md-6">
             <div class="proj-img d-flex justify-content-center">
               <div class="proj-img-wrap d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#proj03Modal">
                 <span class="proj-name">Reminder App</span>
@@ -114,7 +115,7 @@
               </div>
             </div>
           </div>
-          <div class="my-3 col-lg-4 col-md-6">
+          <div class="my-3 column-lg-4 column-md-6">
             <div class="proj-img d-flex justify-content-center">
               <div class="proj-img-wrap d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#proj04Modal">
                 <span class="proj-name">Clock App</span>
@@ -122,7 +123,7 @@
               </div>
             </div>
           </div>
-          <div class="my-3 col-lg-4 col-md-6">
+          <div class="my-3 column-lg-4 column-md-6">
             <div class="proj-img d-flex justify-content-center">
               <div class="proj-img-wrap d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#proj05Modal">
                 <span class="proj-name">Weather Map</span>
@@ -130,7 +131,7 @@
               </div>
             </div>
           </div>
-          <div class="my-3 col-lg-4 col-md-6">
+          <div class="my-3 column-lg-4 column-md-6">
             <div class="proj-img d-flex justify-content-center">
               <div class="proj-img-wrap d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#proj06Modal">
                 <span class="proj-name">Lyrics Finder App</span>
