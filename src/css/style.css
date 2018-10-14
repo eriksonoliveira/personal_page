@@ -39,12 +39,12 @@ body {
 
 .menu-height {
   height: 70px;
+  line-height: 70px;
 }
 
 .menu {
   width: 100%;
   text-align: center;
-  line-height: 70px;
   background-color: transparent;
   position: fixed;
   z-index: 100;
@@ -58,7 +58,7 @@ body {
 
 .menu-logo {
   width: 210px;
-  margin-left: 20px;
+  margin-left: 10px;
   display: none;
   float: left;
 }
@@ -68,7 +68,7 @@ body {
 }
 
 .logo {
-  font-size: 25px;
+  font-size: 1.5rem;
   font-weight: bold;
   color: #42dca3;
 }
@@ -92,6 +92,14 @@ body {
 
 .menu-nav ul li a.fix-menu {
   color: #222;
+}
+
+.home-link {
+  display: none;
+}
+
+.home-link.fix-menu {
+  display: inline;
 }
 
 #header {
@@ -144,12 +152,12 @@ body {
 }
 
 .header-title {
-  font-size: 36px;
+  font-size: 2rem;
   font-weight: 700;
 }
 
 .header-subtitle {
-  font-size: 20px;
+  font-size: 1.2rem;
 }
 
 .header-scroll-trigger {
@@ -396,7 +404,7 @@ body {
 .form-field {
   padding-left: 5px;
   width: 350px;
-  font-size: 16px;
+  font-size: 1rem;
   border-radius: 0;
 }
 
@@ -540,7 +548,7 @@ body {
 }
 
 @media only screen and (min-width: 769px) {
- 
+
   .menu-nav ul li a {
     position: relative;
   }
@@ -569,27 +577,24 @@ body {
 
 @media only screen and (max-width: 768px) {
 
-  /* html.active,
-  body.active {
-       overflow-y: hidden;
-  } */
-
   .mobile-btn {
-    width: 36px;
-    height: 36px;
+    width: 32px;
+    height: 32px;
     color: #222;
     display: block;
-    border-top: 4px solid;
+    position: relative;
+    border-top: 3px solid;
     margin: 20px 20px 0 0;
     float: right;
     cursor: pointer;
+    z-index: 2;
     -webkit-backface-visibility: hidden;
   }
 
   .mobile-btn:after,
   .mobile-btn:before {
     content: '';
-    height: 4px;
+    height: 3px;
     margin-top: 6px;
     display: block;
     background: currentColor;
@@ -603,14 +608,14 @@ body {
 
   .mobile-btn.active:after {
     margin-top: 0px;
-    top: 2px;
+    top: 3px;
     transform: rotate(45deg);
   }
 
   .mobile-btn.active:before {
     margin-top: 0px;
     top: 6px;
-    transform: rotate(135deg);
+    transform: rotate(-45deg);
   }
 
   .menu-nav.mobile-menu {
@@ -618,55 +623,50 @@ body {
     width: 250px;
     position: fixed;
     background: #FFF;
-    padding: 0px 0 0 0;
-    right: 0px;
-    top: 65px;
-    opacity: 0;
-    visibility: hidden;
-    transform: translate3d(70px, 0px, 0px);
-    transition: all .2s ease-in-out;
+    right: -250px;
     box-shadow: -2px 0 5px 0 rgba(20, 20, 20, 0.4);
+    z-index: 1;
+    transition: transform .2s ease-in-out;
   }
 
   .menu-nav.mobile-menu.active {
-    opacity: 1;
-    visibility: visible;
-    transform: translate3d(0px, 0px, 0px);
+    transform: translate3d(-250px, 0px, 0px);
+  }
+
+  .menu-nav.mobile-menu ul, .menu-nav.mobile-menu li {
+    padding: 0;
   }
 
   .menu-nav.mobile-menu ul {
-    padding: 0 0px;
+    margin-top: 65px;
   }
 
   .menu-nav.mobile-menu li {
     display: block;
-    padding: 0;
-    border-bottom: 1px solid #42dca3;
   }
 
   .menu-nav.mobile-menu li a {
     height: 50px;
     width: 100%;
-    line-height: 50px;
+    line-height: 30px;
     display: block;
-    font-weight: normal;
-    font-size: 12px;
+    font-weight: 400;
+    font-size: 0.9rem;
     color: #222;
   }
 
   .menu-nav.mobile-menu li a:hover {
     background-color: rgba(66, 220, 163, .3);
-  }
-
-  .menu-nav.mobile-menu li:hover a {
     color: #555;
   }
 
+/*
   .menu-nav.mobile-menu li a {
     padding: 0;
     font-weight: normal;
     font-size: 12px;
   }
+*/
 
   .header {
     height: 400px;
@@ -752,13 +752,22 @@ body {
 }
 
 @media only screen and (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+
+  .menu-height {
+    height: 60px;
+    line-height: 60px;
+  }
+
   .scroll-trigger {
     width: 2.5rem;
     height: 2.5rem;
   }
 
   .scroll-trigger .fa-angle-double-down {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
   }
 
   .proj-img-wrap img {
@@ -775,7 +784,6 @@ body {
 
   .form-field {
     width: 320px;
-    font-size: 14px;
   }
 
   #message {
