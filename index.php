@@ -8,7 +8,7 @@
 
   <!--  Custom CSS  -->
   <link rel="stylesheet" href="./src/css/style.css" />
-  <link rel="stylesheet" href="./src/css/grid.css"/>
+  <link rel="stylesheet" href="./src/css/grid.css" />
 
   <!-- inject:css -->
   <!-- endinject -->
@@ -47,7 +47,7 @@
         <div class="header-title-wrapper" class="align-middle">
           <img src="./src/img/me.jpg" class="round-image mx-auto" alt="Photo: Erikson Oliveira - Web developer" />
           <div class="header-title">Erikson Oliveira</div>
-          <div class="header-subtitle font-weight-300">Hi, I'm a Web Developer who specializes<br> in Javascript development</div>
+          <div class="header-subtitle font-weight-300">Hi, I'm a Web Developer who specializes<br> in Front End development</div>
         </div>
       </header>
 
@@ -70,19 +70,17 @@
       </div>
       <article class="about-text font-weight-300">
         <p>
-          I'm a Full Stack developer who specializes in the development of web applications using PHP and Javascript languages.
+          I am a web developer who works most of the time with Javascript. I love be constantly learning the details of the language so that I can write cleaner and more efficient code.
+          I also have experience working on the back end with PHP and SQL.
         </p>
 
         <p>
-          I started developing applications in 2016 while I was working as a meteorologist in Florianopolis, Brazil, and I realized that there were better ways to do the same work we were doing. I then decide to learn to code so I could build the tools that I had in my mind.
+          I started developing applications in 2016 while I was
+          living in Florianopolis, Brazil, working at a government institution. At the time I helped create applications that would help the staff to be more efficient at their work while keeping the user experience simple and intuitive. Since then I have developed a passion for working with the front end and have strived to become a better javascript developer by constant learning and practice.
         </p>
 
         <p>
-          Since then I became passionate about building tools that are simple to use and help people complete their tasks in a faster and more efficient way.
-        </p>
-
-        <p>
-          When I'm not learning or working on a project, I'm usually spending time with my wife, at the gym, or playing video games.
+          When I'm not studying or working on a project, I like to spend my free time with my wife, working out at the gym, or playing video games.
         </p>
       </article>
     </section>
@@ -91,52 +89,40 @@
       <div class="projects-container">
         <h2 class="projects-title text-center mb-4">See some of my projects</h2>
         <div class="text-center mx-auto">
-          <div class="my-3 column-lg-4 column-md-6">
-            <div class="proj-img d-flex justify-content-center">
-              <div class="proj-img-wrap d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#proj01Modal">
-                <span class="proj-name">Weather Database</span>
-                <img class="img-responsive" src="./src/img/proj-01.jpg" alt="Project Weather Database" />
-              </div>
+          <div class="my-4 my-md-3 column-lg-4 column-md-6">
+            <div class="proj-img-wrap text-center" data-toggle="modal" data-target="#proj01Modal">
+              <span class="proj-name">Weather Database</span>
+              <img src="./src/img/proj-01.jpg" alt="Project Weather Database" />
             </div>
           </div>
-          <div class="my-3 column-lg-4 column-md-6">
-            <div class="proj-img d-flex justify-content-center">
-              <div class="proj-img-wrap d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#proj02Modal">
-                <span class="proj-name">Local Weather</span>
-                <img class="img-responsive" src="./src/img/proj-02.jpg" alt="Project Weather App" />
-              </div>
+          <div class="my-4 my-md-3 column-lg-4 column-md-6">
+            <div class="proj-img-wrap text-center" data-toggle="modal" data-target="#proj02Modal">
+              <span class="proj-name">Local Weather</span>
+              <img src="./src/img/proj-02.jpg" alt="Project Weather App" />
             </div>
           </div>
-          <div class="my-3 column-lg-4 column-md-6">
-            <div class="proj-img d-flex justify-content-center">
-              <div class="proj-img-wrap d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#proj03Modal">
-                <span class="proj-name">Reminder App</span>
-                <img class="img-responsive" src="./src/img/proj-03.jpg" alt="Project Reminder App" />
-              </div>
+          <div class="my-4 my-md-3 column-lg-4 column-md-6">
+            <div class="proj-img-wrap text-center" data-toggle="modal" data-target="#proj03Modal">
+              <span class="proj-name">Reminder App</span>
+              <img src="./src/img/proj-03.jpg" alt="Project Reminder App" />
             </div>
           </div>
-          <div class="my-3 column-lg-4 column-md-6">
-            <div class="proj-img d-flex justify-content-center">
-              <div class="proj-img-wrap d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#proj04Modal">
-                <span class="proj-name">Clock App</span>
-                <img class="img-responsive" src="./src/img/proj-04.jpg" alt="Project Clock App" />
-              </div>
+          <div class="my-4 my-md-3 column-lg-4 column-md-6">
+            <div class="proj-img-wrap text-center" data-toggle="modal" data-target="#proj04Modal">
+              <span class="proj-name">Clock App</span>
+              <img src="./src/img/proj-04.jpg" alt="Project Clock App" />
             </div>
           </div>
-          <div class="my-3 column-lg-4 column-md-6">
-            <div class="proj-img d-flex justify-content-center">
-              <div class="proj-img-wrap d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#proj05Modal">
-                <span class="proj-name">Weather Map</span>
-                <img class="img-responsive" src="./src/img/proj-05.jpg" alt="Project Weather Map" />
-              </div>
+          <div class="my-4 my-md-3 column-lg-4 column-md-6">
+            <div class="proj-img-wrap text-center" data-toggle="modal" data-target="#proj05Modal">
+              <span class="proj-name">Weather Map</span>
+              <img src="./src/img/proj-05.jpg" alt="Project Weather Map" />
             </div>
           </div>
-          <div class="my-3 column-lg-4 column-md-6">
-            <div class="proj-img d-flex justify-content-center">
-              <div class="proj-img-wrap d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#proj06Modal">
-                <span class="proj-name">Lyrics Finder App</span>
-                <img class="img-responsive" src="./src/img/proj-06-3.jpg" alt="Project Lyrics Finder App" />
-              </div>
+          <div class="my-4 my-md-3 column-lg-4 column-md-6">
+            <div class="proj-img-wrap text-center" data-toggle="modal" data-target="#proj06Modal">
+              <span class="proj-name">Lyrics Finder App</span>
+              <img src="./src/img/proj-06-3.jpg" alt="Project Lyrics Finder App" />
             </div>
           </div>
         </div>
