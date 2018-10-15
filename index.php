@@ -8,7 +8,7 @@
 
   <!--  Custom CSS  -->
   <link rel="stylesheet" href="./src/css/style.css" />
-  <link rel="stylesheet" href="./src/css/grid.css"/>
+  <link rel="stylesheet" href="./src/css/grid.css" />
 
   <!-- inject:css -->
   <!-- endinject -->
@@ -91,52 +91,40 @@
       <div class="projects-container">
         <h2 class="projects-title text-center mb-4">See some of my projects</h2>
         <div class="text-center mx-auto">
-          <div class="my-3 column-lg-4 column-md-6">
-            <div class="proj-img d-flex justify-content-center">
-              <div class="proj-img-wrap d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#proj01Modal">
-                <span class="proj-name">Weather Database</span>
-                <img class="img-responsive" src="./src/img/proj-01.jpg" alt="Project Weather Database" />
-              </div>
+          <div class="my-4 my-md-3 column-lg-4 column-md-6">
+            <div class="proj-img-wrap text-center" data-toggle="modal" data-target="#proj01Modal">
+              <span class="proj-name">Weather Database</span>
+              <img src="./src/img/proj-01.jpg" alt="Project Weather Database" />
             </div>
           </div>
-          <div class="my-3 column-lg-4 column-md-6">
-            <div class="proj-img d-flex justify-content-center">
-              <div class="proj-img-wrap d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#proj02Modal">
-                <span class="proj-name">Local Weather</span>
-                <img class="img-responsive" src="./src/img/proj-02.jpg" alt="Project Weather App" />
-              </div>
+          <div class="my-4 my-md-3 column-lg-4 column-md-6">
+            <div class="proj-img-wrap text-center" data-toggle="modal" data-target="#proj02Modal">
+              <span class="proj-name">Local Weather</span>
+              <img src="./src/img/proj-02.jpg" alt="Project Weather App" />
             </div>
           </div>
-          <div class="my-3 column-lg-4 column-md-6">
-            <div class="proj-img d-flex justify-content-center">
-              <div class="proj-img-wrap d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#proj03Modal">
-                <span class="proj-name">Reminder App</span>
-                <img class="img-responsive" src="./src/img/proj-03.jpg" alt="Project Reminder App" />
-              </div>
+          <div class="my-4 my-md-3 column-lg-4 column-md-6">
+            <div class="proj-img-wrap text-center" data-toggle="modal" data-target="#proj03Modal">
+              <span class="proj-name">Reminder App</span>
+              <img src="./src/img/proj-03.jpg" alt="Project Reminder App" />
             </div>
           </div>
-          <div class="my-3 column-lg-4 column-md-6">
-            <div class="proj-img d-flex justify-content-center">
-              <div class="proj-img-wrap d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#proj04Modal">
-                <span class="proj-name">Clock App</span>
-                <img class="img-responsive" src="./src/img/proj-04.jpg" alt="Project Clock App" />
-              </div>
+          <div class="my-4 my-md-3 column-lg-4 column-md-6">
+            <div class="proj-img-wrap text-center" data-toggle="modal" data-target="#proj04Modal">
+              <span class="proj-name">Clock App</span>
+              <img src="./src/img/proj-04.jpg" alt="Project Clock App" />
             </div>
           </div>
-          <div class="my-3 column-lg-4 column-md-6">
-            <div class="proj-img d-flex justify-content-center">
-              <div class="proj-img-wrap d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#proj05Modal">
-                <span class="proj-name">Weather Map</span>
-                <img class="img-responsive" src="./src/img/proj-05.jpg" alt="Project Weather Map" />
-              </div>
+          <div class="my-4 my-md-3 column-lg-4 column-md-6">
+            <div class="proj-img-wrap text-center" data-toggle="modal" data-target="#proj05Modal">
+              <span class="proj-name">Weather Map</span>
+              <img src="./src/img/proj-05.jpg" alt="Project Weather Map" />
             </div>
           </div>
-          <div class="my-3 column-lg-4 column-md-6">
-            <div class="proj-img d-flex justify-content-center">
-              <div class="proj-img-wrap d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#proj06Modal">
-                <span class="proj-name">Lyrics Finder App</span>
-                <img class="img-responsive" src="./src/img/proj-06-3.jpg" alt="Project Lyrics Finder App" />
-              </div>
+          <div class="my-4 my-md-3 column-lg-4 column-md-6">
+            <div class="proj-img-wrap text-center" data-toggle="modal" data-target="#proj06Modal">
+              <span class="proj-name">Lyrics Finder App</span>
+              <img src="./src/img/proj-06-3.jpg" alt="Project Lyrics Finder App" />
             </div>
           </div>
         </div>
