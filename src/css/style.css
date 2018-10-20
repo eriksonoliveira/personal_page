@@ -295,7 +295,7 @@ body {
 .proj-modal-img {
   height: 350px;
   background-image: url("../img/proj-01.jpg");
-  background-position: top;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   filter: contrast(110%);

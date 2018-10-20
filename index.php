@@ -103,8 +103,8 @@
           </div>
           <div class="my-4 my-md-3 column-lg-4 column-md-6">
             <div class="proj-img-wrap text-center" data-toggle="modal" data-target="#proj03Modal">
-              <span class="proj-name">Reminder App</span>
-              <img src="./src/img/proj-03.jpg" alt="Project Reminder App" />
+              <span class="proj-name">Lyrics Finder App</span>
+              <img src="./src/img/proj-03.jpg" alt="Project Lyrics Finder App" />
             </div>
           </div>
           <div class="my-4 my-md-3 column-lg-4 column-md-6">
@@ -121,8 +121,8 @@
           </div>
           <div class="my-4 my-md-3 column-lg-4 column-md-6">
             <div class="proj-img-wrap text-center" data-toggle="modal" data-target="#proj06Modal">
-              <span class="proj-name">Lyrics Finder App</span>
-              <img src="./src/img/proj-06-3.jpg" alt="Project Lyrics Finder App" />
+              <span class="proj-name">Reminder App</span>
+              <img src="./src/img/proj-06.jpg" alt="Project Reminder App" />
             </div>
           </div>
         </div>
@@ -246,15 +246,12 @@
             <div class="proj-skills d-md-inline-block text-center">
               <ul class="d-inline-block m-0 p-0">
                 <li class="proj-skills-item d-inline-block">PHP</li>
-                <li class="proj-skills-item d-inline-block">JQuery</li>
+                <li class="proj-skills-item d-inline-block">Javascript/JQuery</li>
+                <li class="proj-skills-item d-inline-block">MySQL</li>
                 <li class="proj-skills-item d-inline-block">Bootstrap 4</li>
               </ul>
             </div>
           </div>
-        </div>
-        <div class="modal-footer">
-          <a class="proj-modal-view-demo" href="https://eriksonoliveira.com/weather_database" target="_blank">View Demo
-          </a>
         </div>
       </div>
     </div>
@@ -280,8 +277,7 @@
             </article>
             <div class="proj-skills d-md-inline-block text-center">
               <ul class="d-inline-block m-0 p-0">
-                <li class="proj-skills-item d-inline-block">Jquery</li>
-                <li class="proj-skills-item d-inline-block">AJAX</li>
+                <li class="proj-skills-item d-inline-block">Javascript/Jquery</li>
               </ul>
             </div>
           </div>
@@ -294,7 +290,7 @@
     </div>
   </div>
 
-  <!--  Proj03  -->
+   <!--  Proj03  -->
   <div class="modal fade" id="proj03Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel3" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
       <div class="modal-content" style="border-radius: 0">
@@ -305,28 +301,32 @@
         </div>
         <div class="modal-body">
           <div class="proj-modal-img" style="background-image: url(./src/img/proj-03.jpg)"></div>
-          <h5 class="modal-title text-center mt-4" id="ModalLabel3">Reminder App</h5>
+          <h5 class="modal-title text-center mt-4" id="ModalLabel3">Lyrics Finder App</h5>
           <div class="proj-desc">
             <article class="proj-desc-text font-weight-300 d-md-inline-block">
               <p>
-                A reminder app in which users can describe tasks and choose due dates and times. The app is written using the ReactJS framework and the Redux for state management.
+                A ReactJS app where users can search for lyrics. If the song can be found in the Spotify database, the user can also play the song while reads the lyrics.
               </p>
             </article>
             <div class="proj-skills d-md-inline-block text-center">
               <ul class="d-inline-block m-0 p-0">
                 <li class="proj-skills-item d-inline-block">ReactJS</li>
-                <li class="proj-skills-item d-inline-block">Bootstrap 4</li>
+                <li class="proj-skills-item d-inline-block">React Router</li>
+                <li class="proj-skills-item d-inline-block">NodeJS</li>
+                <li class="proj-skills-item d-inline-block">Spotify API</li>
               </ul>
             </div>
           </div>
         </div>
         <div class="modal-footer">
-          <a class="proj-modal-view-demo" href="https://eriksonoliveira.com/remind_me" target="_blank">View Demo
+          <a class="proj-modal-view-demo" href="http://lyrics-finder-eriksonoliveira.herokuapp.com/" target="_blank">View Demo
           </a>
         </div>
       </div>
     </div>
   </div>
+
+
 
   <!--  Proj04  -->
   <div class="modal fade" id="proj04Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel4" aria-hidden="true">
@@ -388,15 +388,11 @@
             </div>
           </div>
         </div>
-        <div class="modal-footer">
-          <a class="proj-modal-view-demo" href="https://eriksonoliveira.com/weather_map" target="_blank">View Demo
-          </a>
-        </div>
       </div>
     </div>
   </div>
 
-  <!--  Proj06  -->
+ <!--  Proj06  -->
   <div class="modal fade" id="proj06Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel6" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
       <div class="modal-content" style="border-radius: 0">
@@ -406,25 +402,24 @@
           </button>
         </div>
         <div class="modal-body">
-          <div class="proj-modal-img" style="background-image: url(./src/img/proj-06-3.jpg)"></div>
-          <h5 class="modal-title text-center mt-4" id="ModalLabel3">Lyrics Finder App</h5>
+          <div class="proj-modal-img" style="background-image: url(./src/img/proj-06.jpg)"></div>
+          <h5 class="modal-title text-center mt-4" id="ModalLabel3">Reminder App</h5>
           <div class="proj-desc">
             <article class="proj-desc-text font-weight-300 d-md-inline-block">
               <p>
-                A ReactJS app where users can search for lyrics. If the song can be found in the Spotify database, the user can also play the song while reads the lyrics.
+                A reminder app in which users can describe tasks and choose due dates and times. The app is written using the ReactJS framework and the Redux for state management.
               </p>
             </article>
             <div class="proj-skills d-md-inline-block text-center">
               <ul class="d-inline-block m-0 p-0">
                 <li class="proj-skills-item d-inline-block">ReactJS</li>
-                <li class="proj-skills-item d-inline-block">React Router</li>
-                <li class="proj-skills-item d-inline-block">Spotify API</li>
+                <li class="proj-skills-item d-inline-block">Bootstrap 4</li>
               </ul>
             </div>
           </div>
         </div>
         <div class="modal-footer">
-          <a class="proj-modal-view-demo" href="http://lyrics-finder-eriksonoliveira.herokuapp.com/" target="_blank">View Demo
+          <a class="proj-modal-view-demo" href="https://eriksonoliveira.com/remind_me" target="_blank">View Demo
           </a>
         </div>
       </div>
