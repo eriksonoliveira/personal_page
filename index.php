@@ -338,7 +338,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <div class="proj-modal-img" style="background-image: url(./src/img/proj-04.jpg)"></div>
+          <div class="proj-modal-img" style="background-image: url(./src/img/proj-04.jpg); background-position: top;"></div>
           <h5 class="modal-title text-center mt-4" id="ModalLabel3">Clock App</h5>
           <div class="proj-desc">
             <article class="proj-desc-text font-weight-300 d-md-inline-block">
@@ -402,7 +402,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <div class="proj-modal-img" style="background-image: url(./src/img/proj-06.jpg)"></div>
+          <div class="proj-modal-img" style="background-image: url(./src/img/proj-06.jpg); background-position: top;"></div>
           <h5 class="modal-title text-center mt-4" id="ModalLabel3">Reminder App</h5>
           <div class="proj-desc">
             <article class="proj-desc-text font-weight-300 d-md-inline-block">
